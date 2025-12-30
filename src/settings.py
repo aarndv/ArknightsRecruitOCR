@@ -102,3 +102,11 @@ class SettingsManager:
     @clear_hotkey.setter
     def clear_hotkey(self, value):
         self.set(value, "hotkeys", "clear")
+    
+    @property
+    def quick_hotkey(self):
+        return self.get("hotkeys", "quick") or "F8"
+    
+    @quick_hotkey.setter
+    def quick_hotkey(self, value):
+        self.set(value, "hotkeys", "quick")

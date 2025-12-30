@@ -94,6 +94,7 @@ class OverlayApp:
         
         scan_key = self.settings.scan_hotkey
         clear_key = self.settings.clear_hotkey
+        quick_key = self.settings.quick_hotkey
         
         # Setup keyboard hotkeys (non-mouse)
         if not scan_key.startswith("Mouse"):
@@ -102,15 +103,18 @@ class OverlayApp:
         if not clear_key.startswith("Mouse"):
             keyboard.add_hotkey(clear_key, lambda: self.root.after(0, self.clear_highlights))
         
+        if not quick_key.startswith("Mouse"):
+            keyboard.add_hotkey(quick_key, lambda: self.root.after(0, self.quick_scan))
+        
         # Setup mouse button hotkeys if needed
-        if scan_key.startswith("Mouse") or clear_key.startswith("Mouse"):
-            self._setup_mouse_listener(scan_key, clear_key)
+        if scan_key.startswith("Mouse") or clear_key.startswith("Mouse") or quick_key.startswith("Mouse"):
+            self._setup_mouse_listener(scan_key, clear_key, quick_key)
         
         # Update header label
         if hasattr(self, 'header_label'):
-            self.header_label.config(text=f"[{scan_key}] Scan | [{clear_key}] Clear")
+            self.header_label.config(text=f"[{scan_key}] Scan  •  [{quick_key}] Quick  •  [{clear_key}] Clear")
     
-    def _setup_mouse_listener(self, scan_key, clear_key):
+    def _setup_mouse_listener(self, scan_key, clear_key, quick_key):
         """Setup mouse button listener using pynput"""
         try:
             from pynput import mouse
@@ -128,6 +132,8 @@ class OverlayApp:
                             self.root.after(0, self.perform_scan_sequence)
                         elif button_name == clear_key:
                             self.root.after(0, self.clear_highlights)
+                        elif button_name == quick_key:
+                            self.root.after(0, self.quick_scan)
             
             self.mouse_listener = mouse.Listener(on_click=on_click)
             self.mouse_listener.start()
@@ -158,7 +164,7 @@ class OverlayApp:
         title_label.pack()
         
         self.header_label = tk.Label(header, 
-                                     text=f"[{self.settings.scan_hotkey}] Scan  •  [{self.settings.clear_hotkey}] Clear", 
+                                     text=f"[{self.settings.scan_hotkey}] Scan  •  [{self.settings.quick_hotkey}] Quick  •  [{self.settings.clear_hotkey}] Clear", 
                                      fg=text_dim, bg=bg_dark, font=("Segoe UI", 9))
         self.header_label.pack(pady=(2, 0))
         
@@ -869,7 +875,7 @@ class SettingsDialog:
         # Create dialog window
         self.dialog = tk.Toplevel(parent)
         self.dialog.title("Settings")
-        self.dialog.geometry("380x320")
+        self.dialog.geometry("380x380")
         self.dialog.configure(bg=self.bg_dark)
         self.dialog.attributes("-topmost", True)
         self.dialog.resizable(False, False)
@@ -914,9 +920,9 @@ class SettingsDialog:
         
         # Clear hotkey
         clear_frame = tk.Frame(hotkey_frame, bg=self.bg_dark)
-        clear_frame.pack(fill="x", padx=10, pady=8)
+        clear_frame.pack(fill="x", padx=10, pady=5)
         
-        tk.Label(clear_frame, text="Clear Highlights:", fg=self.text_light, bg=self.bg_dark, 
+        tk.Label(clear_frame, text="Clear:", fg=self.text_light, bg=self.bg_dark, 
                 width=14, anchor="w", font=("Segoe UI", 10)).pack(side="left")
         self.clear_var = tk.StringVar(value=self.settings.clear_hotkey)
         clear_combo = ttk.Combobox(clear_frame, textvariable=self.clear_var, values=HOTKEY_OPTIONS, width=12)
@@ -926,6 +932,21 @@ class SettingsDialog:
                                       bg=self.bg_medium, fg=self.text_light, relief="flat",
                                       font=("Segoe UI", 9), cursor="hand2")
         clear_capture_btn.pack(side="left", padx=5)
+        
+        # Quick Scan hotkey
+        quick_frame = tk.Frame(hotkey_frame, bg=self.bg_dark)
+        quick_frame.pack(fill="x", padx=10, pady=5)
+        
+        tk.Label(quick_frame, text="Quick Scan:", fg=self.text_light, bg=self.bg_dark, 
+                width=14, anchor="w", font=("Segoe UI", 10)).pack(side="left")
+        self.quick_var = tk.StringVar(value=self.settings.quick_hotkey)
+        quick_combo = ttk.Combobox(quick_frame, textvariable=self.quick_var, values=HOTKEY_OPTIONS, width=12)
+        quick_combo.pack(side="left", padx=5)
+        
+        quick_capture_btn = tk.Button(quick_frame, text="⌨ Capture", command=lambda: self.capture_hotkey("quick"),
+                                      bg=self.bg_medium, fg=self.text_light, relief="flat",
+                                      font=("Segoe UI", 9), cursor="hand2")
+        quick_capture_btn.pack(side="left", padx=5)
         
         # Info label
         info_label = tk.Label(self.dialog, 
@@ -1013,26 +1034,31 @@ class SettingsDialog:
         if captured_key[0]:
             if target == "scan":
                 self.scan_var.set(captured_key[0])
-            else:
+            elif target == "clear":
                 self.clear_var.set(captured_key[0])
+            elif target == "quick":
+                self.quick_var.set(captured_key[0])
     
     def save_settings(self):
         """Save settings and close dialog"""
         scan_key = self.scan_var.get()
         clear_key = self.clear_var.get()
+        quick_key = self.quick_var.get()
         
-        # Validate
-        if scan_key == clear_key:
-            messagebox.showerror("Error", "Scan and Clear hotkeys must be different!")
+        # Validate - all must be different
+        keys = [scan_key, clear_key, quick_key]
+        if len(keys) != len(set(keys)):
+            messagebox.showerror("Error", "All hotkeys must be different!")
             return
         
-        if not scan_key or not clear_key:
-            messagebox.showerror("Error", "Please set both hotkeys!")
+        if not scan_key or not clear_key or not quick_key:
+            messagebox.showerror("Error", "Please set all hotkeys!")
             return
         
         # Save
         self.settings.scan_hotkey = scan_key
         self.settings.clear_hotkey = clear_key
+        self.settings.quick_hotkey = quick_key
         
         # Callback
         if self.on_save_callback:

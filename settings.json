@@ -1,7 +1,8 @@
 {
   "hotkeys": {
     "scan": "Mouse4",
-    "clear": "Mouse5"
+    "clear": "F8",
+    "quick": "Mouse5"
   },
   "overlay": {
     "opacity": 0.9,
@@ -9,6 +10,8 @@
     "position_y": 50
   },
   "features": {
-    "auto_click": true
+    "auto_click": true,
+    "min_rarity": 3,
+    "sound_notify": true
   }
 }
