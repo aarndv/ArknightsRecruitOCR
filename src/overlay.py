@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import keyboard
 import time
-import threading
 from datetime import datetime
 from .scanner import ScreenScanner
 from .calculator import RecruitCalculator
@@ -16,7 +15,6 @@ class OverlayApp:
         self.scanner = ScreenScanner()
         self.settings = SettingsManager()
         
-        # Store tag positions and current recommendations
         self.tag_positions = {}  # tag_name -> (x1, y1, x2, y2)
         self.highlight_windows = []  # List of highlight overlay windows
         self.selected_combo = None  # Currently highlighted combo
@@ -24,15 +22,10 @@ class OverlayApp:
         
         # Scan history (last 10 scans)
         self.scan_history = []
-        self.max_history = 10
+        self.max_history = 100
         
-        # Mouse listener for mouse button hotkeys
         self.mouse_listener = None
-        
-        # Tooltip window
         self.tooltip = None
-
-        # UI Config
         self.root = tk.Tk()
         
         # Auto-click feature (must be after root is created)
@@ -40,9 +33,6 @@ class OverlayApp:
         
         # Minimum rarity filter (default 3 = show all)
         self.min_rarity_filter = tk.IntVar(value=self.settings.get("features", "min_rarity") or 3)
-        
-        # Sound notification for high rarity
-        self.sound_enabled = tk.BooleanVar(value=self.settings.get("features", "sound_notify") or False)
         
         self.root.title("Arknights Recruit Helper")
         self.root.attributes("-topmost", True) # Always on top
@@ -235,14 +225,6 @@ class OverlayApp:
                                     font=("Segoe UI", 9), cursor="hand2")
         auto_check.pack(side="left", padx=5)
         
-        sound_check = tk.Checkbutton(options_frame1, text="🔔 Sound (4★+)", 
-                                     variable=self.sound_enabled,
-                                     command=self.on_sound_toggle,
-                                     bg=bg_dark, fg="#9C27B0", selectcolor=bg_medium, 
-                                     activebackground=bg_dark, activeforeground="#9C27B0",
-                                     font=("Segoe UI", 9), cursor="hand2")
-        sound_check.pack(side="left", padx=10)
-        
         # Options row 2: Minimum rarity filter
         options_frame2 = tk.Frame(main_frame, bg=bg_dark)
         options_frame2.pack(fill="x", padx=10, pady=2)
@@ -324,26 +306,12 @@ class OverlayApp:
         self.settings.set(self.auto_click_enabled.get(), "features", "auto_click")
         print(f"Auto-click {'enabled' if self.auto_click_enabled.get() else 'disabled'}")
     
-    def on_sound_toggle(self):
-        """Save sound notification preference"""
-        self.settings.set(self.sound_enabled.get(), "features", "sound_notify")
-        print(f"Sound notification {'enabled' if self.sound_enabled.get() else 'disabled'}")
-    
     def on_filter_change(self):
         """Save and apply rarity filter"""
         self.settings.set(self.min_rarity_filter.get(), "features", "min_rarity")
         # Re-apply filter to current results if we have tags
         if self.tag_positions:
             self.update_results(list(self.tag_positions.keys()))
-    
-    def play_notification_sound(self):
-        """Play a notification sound for high rarity results"""
-        try:
-            import winsound
-            # Play Windows asterisk sound
-            winsound.MessageBeep(winsound.MB_ICONASTERISK)
-        except:
-            pass  # Silently fail on non-Windows or if no sound available
     
     def quick_scan(self):
         """Scan and automatically click the first/best result"""
@@ -665,11 +633,6 @@ class OverlayApp:
         
         # Add to history (with unfiltered results)
         self.add_to_history(tags, results)
-        
-        # Check for high rarity and play sound
-        best_min = max([r['min'] for r in results]) if results else 0
-        if self.sound_enabled.get() and best_min >= 4:
-            self.play_notification_sound()
         
         if not filtered_results:
             if results:
