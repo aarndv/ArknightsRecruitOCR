@@ -1,0 +1,14 @@
+{
+  "hotkeys": {
+    "scan": "Mouse4",
+    "clear": "Mouse5"
+  },
+  "overlay": {
+    "opacity": 0.9,
+    "position_x": 50,
+    "position_y": 50
+  },
+  "features": {
+    "auto_click": true
+  }
+}

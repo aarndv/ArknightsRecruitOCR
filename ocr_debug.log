@@ -1,0 +1,1889 @@
+[2025-12-30 12:15:51] 
+==================================================
+[2025-12-30 12:15:51] NEW SCAN STARTED
+[2025-12-30 12:15:51] ==================================================
+[2025-12-30 12:15:51] Screen size: 1920x1080
+[2025-12-30 12:15:51] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:15:51] Scaled ROI size: 2187x711 (scale=3x)
+[2025-12-30 12:15:51] Tesseract config: --psm 6
+[2025-12-30 12:15:51] 
+--- FULL OCR TEXT ---
+[2025-12-30 12:15:51] =
+a, a
+
+[2025-12-30 12:15:51] ---------------------
+[2025-12-30 12:15:51] 
+--- MATCHING WORDS (3 words) ---
+[2025-12-30 12:15:51]   Word: '=' -> Skipped (too short, need 4+ chars)
+[2025-12-30 12:15:51]   Word: 'a,' -> Skipped (too short, need 4+ chars)
+[2025-12-30 12:15:51]   Word: 'a' -> Skipped (too short, need 4+ chars)
+[2025-12-30 12:15:51] 
+--- RESULT ---
+[2025-12-30 12:15:51] Found tags: set()
+[2025-12-30 12:15:51] ==================================================
+
+[2025-12-30 12:16:17] 
+==================================================
+[2025-12-30 12:16:17] NEW SCAN STARTED
+[2025-12-30 12:16:17] ==================================================
+[2025-12-30 12:16:17] Screen size: 1920x1080
+[2025-12-30 12:16:17] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:16:17] Scaled ROI size: 2187x711 (scale=3x)
+[2025-12-30 12:16:17] Tesseract config: --psm 6
+[2025-12-30 12:16:17] 
+--- FULL OCR TEXT ---
+[2025-12-30 12:16:17] = = os
+==
+
+[2025-12-30 12:16:17] ---------------------
+[2025-12-30 12:16:17] 
+--- MATCHING WORDS (4 words) ---
+[2025-12-30 12:16:17]   Word: '=' -> Skipped (too short, need 4+ chars)
+[2025-12-30 12:16:17]   Word: '=' -> Skipped (too short, need 4+ chars)
+[2025-12-30 12:16:17]   Word: 'os' -> Skipped (too short, need 4+ chars)
+[2025-12-30 12:16:17]   Word: '==' -> Skipped (too short, need 4+ chars)
+[2025-12-30 12:16:17] 
+--- RESULT ---
+[2025-12-30 12:16:17] Found tags: set()
+[2025-12-30 12:16:17] ==================================================
+
+[2025-12-30 12:18:12] 
+==================================================
+[2025-12-30 12:18:12] NEW SCAN STARTED
+[2025-12-30 12:18:12] ==================================================
+[2025-12-30 12:18:12] Screen size: 1920x1080
+[2025-12-30 12:18:12] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:18:12] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:18:12] Tesseract config: --psm 11 --oem 3
+[2025-12-30 12:18:12] 
+--- FULL OCR TEXT ---
+[2025-12-30 12:18:12] ——
+
+[2025-12-30 12:18:12] ---------------------
+[2025-12-30 12:18:12] 
+--- MATCHING WORDS (1 words) ---
+[2025-12-30 12:18:12]   Word: '——' -> Skipped (too short, need 3+ chars)
+[2025-12-30 12:18:12] 
+--- RESULT ---
+[2025-12-30 12:18:12] Found tags: set()
+[2025-12-30 12:18:12] ==================================================
+
+[2025-12-30 12:27:01] Initializing EasyOCR...
+[2025-12-30 12:27:05] EasyOCR initialized.
+[2025-12-30 12:27:09] 
+==================================================
+[2025-12-30 12:27:09] NEW SCAN STARTED
+[2025-12-30 12:27:09] ==================================================
+[2025-12-30 12:27:09] Screen size: 1920x1080
+[2025-12-30 12:27:09] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:27:09] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:27:09] Running EasyOCR...
+[2025-12-30 12:27:12] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:27:12]   Detected: 'Guard' (confidence: 0.92)
+[2025-12-30 12:27:12]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 12:27:12]     ✓ ACCEPTED
+[2025-12-30 12:27:12]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 12:27:12]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 12:27:12]     ✓ ACCEPTED
+[2025-12-30 12:27:12]   Detected: 'Vanguard' (confidence: 0.96)
+[2025-12-30 12:27:12]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:27:12]     ✓ ACCEPTED
+[2025-12-30 12:27:12]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:27:12]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:27:12]     ✓ ACCEPTED
+[2025-12-30 12:27:12]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 12:27:12]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 12:27:12]     ✓ ACCEPTED
+[2025-12-30 12:27:12] 
+--- RESULT ---
+[2025-12-30 12:27:12] Found tags: {'DPS', 'Guard', 'Melee', 'Vanguard', 'Caster'}
+[2025-12-30 12:27:12] ==================================================
+
+[2025-12-30 12:32:57] Initializing EasyOCR...
+[2025-12-30 12:32:59] EasyOCR initialized.
+[2025-12-30 12:33:05] 
+==================================================
+[2025-12-30 12:33:05] NEW SCAN STARTED
+[2025-12-30 12:33:05] ==================================================
+[2025-12-30 12:33:05] Screen size: 1920x1080
+[2025-12-30 12:33:05] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:33:05] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:33:05] Running EasyOCR...
+[2025-12-30 12:33:07] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:33:07]   Detected: 'Guard' (confidence: 1.00)
+[2025-12-30 12:33:07]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 12:33:07]     ✓ ACCEPTED (screen pos: (644, 581, 717, 612))
+[2025-12-30 12:33:07]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 12:33:07]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 12:33:07]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 12:33:07]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 12:33:07]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:33:07]     ✓ ACCEPTED (screen pos: (1108, 581, 1222, 618))
+[2025-12-30 12:33:07]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:33:07]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:33:07]     ✓ ACCEPTED (screen pos: (645, 685, 718, 716))
+[2025-12-30 12:33:07]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 12:33:07]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 12:33:07]     ✓ ACCEPTED (screen pos: (899, 687, 949, 715))
+[2025-12-30 12:33:07] 
+--- RESULT ---
+[2025-12-30 12:33:07] Found tags: ['Guard', 'Caster', 'Vanguard', 'Melee', 'DPS']
+[2025-12-30 12:33:07] ==================================================
+
+[2025-12-30 12:33:48] 
+==================================================
+[2025-12-30 12:33:48] NEW SCAN STARTED
+[2025-12-30 12:33:48] ==================================================
+[2025-12-30 12:33:48] Screen size: 1920x1080
+[2025-12-30 12:33:48] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:33:48] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:33:48] Running EasyOCR...
+[2025-12-30 12:33:50] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:33:50]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 12:33:50]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 12:33:50]     ✓ ACCEPTED (screen pos: (627, 581, 736, 612))
+[2025-12-30 12:33:50]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 12:33:50]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 12:33:50]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 12:33:50]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:33:50]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:33:50]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 12:33:50]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:33:50]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:33:50]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 12:33:50]   Detected: 'DP-Recovery' (confidence: 0.90)
+[2025-12-30 12:33:50]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 12:33:50]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 12:33:50] 
+--- RESULT ---
+[2025-12-30 12:33:50] Found tags: ['Defender', 'Supporter', 'Melee', 'Starter', 'DP-Recovery']
+[2025-12-30 12:33:50] ==================================================
+
+[2025-12-30 12:35:08] 
+==================================================
+[2025-12-30 12:35:08] NEW SCAN STARTED
+[2025-12-30 12:35:08] ==================================================
+[2025-12-30 12:35:08] Screen size: 1920x1080
+[2025-12-30 12:35:08] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:35:08] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:35:08] Running EasyOCR...
+[2025-12-30 12:35:10] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:35:10]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 12:35:10]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 12:35:10]     ✓ ACCEPTED (screen pos: (627, 581, 736, 612))
+[2025-12-30 12:35:10]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 12:35:10]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:35:10]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 12:35:10]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:35:10]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:35:10]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 12:35:10]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:35:10]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:35:10]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 12:35:10]   Detected: 'AoE' (confidence: 1.00)
+[2025-12-30 12:35:10]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 12:35:10]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 12:35:10] 
+--- RESULT ---
+[2025-12-30 12:35:10] Found tags: ['Defender', 'Vanguard', 'Melee', 'Starter', 'AoE']
+[2025-12-30 12:35:10] ==================================================
+
+[2025-12-30 12:35:39] 
+==================================================
+[2025-12-30 12:35:39] NEW SCAN STARTED
+[2025-12-30 12:35:39] ==================================================
+[2025-12-30 12:35:39] Screen size: 1920x1080
+[2025-12-30 12:35:39] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:35:39] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:35:39] Running EasyOCR...
+[2025-12-30 12:35:41] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:35:41]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 12:35:41]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 12:35:41]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 12:35:41]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 12:35:41]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 12:35:41]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 12:35:41]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:35:41]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:35:41]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 12:35:41]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 12:35:41]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 12:35:41]     ✓ ACCEPTED (screen pos: (655, 686, 706, 714))
+[2025-12-30 12:35:41]   Detected: 'Survival' (confidence: 1.00)
+[2025-12-30 12:35:41]     -> Best match: 'Survival' (score: 100)
+[2025-12-30 12:35:41]     ✓ ACCEPTED (screen pos: (876, 685, 970, 716))
+[2025-12-30 12:35:41] 
+--- RESULT ---
+[2025-12-30 12:35:41] Found tags: ['Medic', 'Caster', 'Melee', 'DPS', 'Survival']
+[2025-12-30 12:35:41] ==================================================
+
+[2025-12-30 12:35:50] 
+==================================================
+[2025-12-30 12:35:50] NEW SCAN STARTED
+[2025-12-30 12:35:50] ==================================================
+[2025-12-30 12:35:50] Screen size: 1920x1080
+[2025-12-30 12:35:50] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:35:50] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:35:50] Running EasyOCR...
+[2025-12-30 12:35:52] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:35:52]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 12:35:52]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 12:35:52]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 12:35:52]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 12:35:52]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:35:52]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 12:35:52]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:35:52]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:35:52]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 12:35:52]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:35:52]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:35:52]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 12:35:52]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 12:35:52]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 12:35:52]     ✓ ACCEPTED (screen pos: (899, 687, 949, 715))
+[2025-12-30 12:35:52] 
+--- RESULT ---
+[2025-12-30 12:35:52] Found tags: ['Medic', 'Vanguard', 'Melee', 'Starter', 'DPS']
+[2025-12-30 12:35:52] ==================================================
+
+[2025-12-30 12:42:44] Initializing EasyOCR...
+[2025-12-30 12:42:44] GPU detected: NVIDIA GeForce RTX 3050
+[2025-12-30 12:42:46] EasyOCR initialized (GPU=True).
+[2025-12-30 12:43:06] 
+==================================================
+[2025-12-30 12:43:06] NEW SCAN STARTED
+[2025-12-30 12:43:06] ==================================================
+[2025-12-30 12:43:06] Screen size: 1920x1080
+[2025-12-30 12:43:06] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:43:06] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:43:06] Running EasyOCR...
+[2025-12-30 12:43:06] 
+--- EASYOCR RAW OUTPUT (3 detections) ---
+[2025-12-30 12:43:06]   Detected: 'Expedite' (confidence: 1.00)
+[2025-12-30 12:43:06]     -> Best match: 'Medic' (score: 54)
+[2025-12-30 12:43:06]     ✗ Rejected (score < 75)
+[2025-12-30 12:43:06]   Detected: 'Cancel' (confidence: 0.95)
+[2025-12-30 12:43:06]     -> Best match: 'Caster' (score: 50)
+[2025-12-30 12:43:06]     ✗ Rejected (score < 75)
+[2025-12-30 12:43:06]   Detected: '4' (confidence: 0.99)
+[2025-12-30 12:43:06]     ✗ Skipped (too short)
+[2025-12-30 12:43:06] 
+--- RESULT ---
+[2025-12-30 12:43:06] Found tags: []
+[2025-12-30 12:43:06] ==================================================
+
+[2025-12-30 12:43:10] 
+==================================================
+[2025-12-30 12:43:10] NEW SCAN STARTED
+[2025-12-30 12:43:10] ==================================================
+[2025-12-30 12:43:10] Screen size: 1920x1080
+[2025-12-30 12:43:10] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:43:10] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:43:10] Running EasyOCR...
+[2025-12-30 12:43:11] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:43:11]   Detected: 'Supporter' (confidence: 0.81)
+[2025-12-30 12:43:11]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 12:43:11]     ✓ ACCEPTED (screen pos: (621, 580, 741, 620))
+[2025-12-30 12:43:11]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:43:11]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:43:11]     ✓ ACCEPTED (screen pos: (880, 581, 966, 612))
+[2025-12-30 12:43:11]   Detected: 'DP-Recovery' (confidence: 0.99)
+[2025-12-30 12:43:11]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 12:43:11]     ✓ ACCEPTED (screen pos: (1087, 578, 1242, 617))
+[2025-12-30 12:43:11]   Detected: 'Defense' (confidence: 1.00)
+[2025-12-30 12:43:11]     -> Best match: 'Defense' (score: 100)
+[2025-12-30 12:43:11]     ✓ ACCEPTED (screen pos: (632, 685, 730, 719))
+[2025-12-30 12:43:11]   Detected: 'Slow' (confidence: 1.00)
+[2025-12-30 12:43:11]     -> Best match: 'Slow' (score: 100)
+[2025-12-30 12:43:11]     ✓ ACCEPTED (screen pos: (892, 685, 952, 716))
+[2025-12-30 12:43:11] 
+--- RESULT ---
+[2025-12-30 12:43:11] Found tags: ['Supporter', 'Starter', 'DP-Recovery', 'Defense', 'Slow']
+[2025-12-30 12:43:11] ==================================================
+
+[2025-12-30 12:44:19] 
+==================================================
+[2025-12-30 12:44:19] NEW SCAN STARTED
+[2025-12-30 12:44:19] ==================================================
+[2025-12-30 12:44:19] Screen size: 1920x1080
+[2025-12-30 12:44:19] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:44:19] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:44:19] Running EasyOCR...
+[2025-12-30 12:44:20] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:44:20]   Detected: 'Defender' (confidence: 0.96)
+[2025-12-30 12:44:20]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 12:44:20]     ✓ ACCEPTED (screen pos: (628, 581, 736, 614))
+[2025-12-30 12:44:20]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 12:44:20]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 12:44:20]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 12:44:20]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:44:20]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:44:20]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 12:44:20]   Detected: 'Ranged' (confidence: 1.00)
+[2025-12-30 12:44:20]     -> Best match: 'Ranged' (score: 100)
+[2025-12-30 12:44:20]     ✓ ACCEPTED (screen pos: (635, 686, 726, 722))
+[2025-12-30 12:44:20]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 12:44:20]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 12:44:20]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 12:44:20] 
+--- RESULT ---
+[2025-12-30 12:44:20] Found tags: ['Defender', 'Caster', 'Melee', 'Ranged', 'AoE']
+[2025-12-30 12:44:20] ==================================================
+
+[2025-12-30 12:44:25] 
+==================================================
+[2025-12-30 12:44:25] NEW SCAN STARTED
+[2025-12-30 12:44:25] ==================================================
+[2025-12-30 12:44:25] Screen size: 1920x1080
+[2025-12-30 12:44:25] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:44:25] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:44:25] Running EasyOCR...
+[2025-12-30 12:44:26] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:44:26]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 12:44:26]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 12:44:26]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 12:44:26]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 12:44:26]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 12:44:26]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 12:44:26]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 12:44:26]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 12:44:26]     ✓ ACCEPTED (screen pos: (1128, 581, 1202, 612))
+[2025-12-30 12:44:26]   Detected: 'Ranged' (confidence: 1.00)
+[2025-12-30 12:44:26]     -> Best match: 'Ranged' (score: 100)
+[2025-12-30 12:44:26]     ✓ ACCEPTED (screen pos: (635, 686, 726, 722))
+[2025-12-30 12:44:26]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:44:26]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:44:26]     ✓ ACCEPTED (screen pos: (880, 685, 966, 716))
+[2025-12-30 12:44:26] 
+--- RESULT ---
+[2025-12-30 12:44:26] Found tags: ['Guard', 'Defender', 'Medic', 'Ranged', 'Starter']
+[2025-12-30 12:44:26] ==================================================
+
+[2025-12-30 12:50:21] Initializing EasyOCR...
+[2025-12-30 12:50:21] GPU detected: NVIDIA GeForce RTX 3050
+[2025-12-30 12:50:23] EasyOCR initialized (GPU=True).
+[2025-12-30 12:50:27] 
+==================================================
+[2025-12-30 12:50:27] NEW SCAN STARTED
+[2025-12-30 12:50:27] ==================================================
+[2025-12-30 12:50:27] Screen size: 1920x1080
+[2025-12-30 12:50:27] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:50:27] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:50:27] Running EasyOCR...
+[2025-12-30 12:50:28] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:50:28]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 12:50:28]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 12:50:28]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 12:50:28]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 12:50:28]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 12:50:28]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 12:50:28]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 12:50:28]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 12:50:28]     ✓ ACCEPTED (screen pos: (1128, 581, 1202, 612))
+[2025-12-30 12:50:28]   Detected: 'Ranged' (confidence: 1.00)
+[2025-12-30 12:50:28]     -> Best match: 'Ranged' (score: 100)
+[2025-12-30 12:50:28]     ✓ ACCEPTED (screen pos: (635, 686, 726, 722))
+[2025-12-30 12:50:28]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:50:28]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:50:28]     ✓ ACCEPTED (screen pos: (880, 685, 966, 716))
+[2025-12-30 12:50:28] 
+--- RESULT ---
+[2025-12-30 12:50:28] Found tags: ['Guard', 'Defender', 'Medic', 'Ranged', 'Starter']
+[2025-12-30 12:50:28] ==================================================
+
+[2025-12-30 12:51:40] 
+==================================================
+[2025-12-30 12:51:40] NEW SCAN STARTED
+[2025-12-30 12:51:40] ==================================================
+[2025-12-30 12:51:40] Screen size: 1920x1080
+[2025-12-30 12:51:40] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:51:40] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:51:40] Running EasyOCR...
+[2025-12-30 12:51:40] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:51:40]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 12:51:40]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 12:51:40]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 12:51:40]   Detected: 'Caster' (confidence: 1.00)
+[2025-12-30 12:51:40]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 12:51:40]     ✓ ACCEPTED (screen pos: (1124, 580, 1205, 614))
+[2025-12-30 12:51:40]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:51:40]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:51:40]     ✓ ACCEPTED (screen pos: (645, 685, 718, 716))
+[2025-12-30 12:51:40]   Detected: 'DP-Recovery' (confidence: 0.91)
+[2025-12-30 12:51:40]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 12:51:40]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 12:51:40]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 12:51:40]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 12:51:40]     ✓ ACCEPTED (screen pos: (638, 576, 724, 623))
+[2025-12-30 12:51:40] 
+--- RESULT ---
+[2025-12-30 12:51:40] Found tags: ['Medic', 'Caster', 'Melee', 'DP-Recovery', 'Sniper']
+[2025-12-30 12:51:40] ==================================================
+
+[2025-12-30 12:51:51] 
+==================================================
+[2025-12-30 12:51:51] NEW SCAN STARTED
+[2025-12-30 12:51:51] ==================================================
+[2025-12-30 12:51:51] Screen size: 1920x1080
+[2025-12-30 12:51:51] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:51:51] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:51:51] Running EasyOCR...
+[2025-12-30 12:51:51] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:51:51]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 12:51:51]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 12:51:51]     ✓ ACCEPTED (screen pos: (627, 581, 736, 612))
+[2025-12-30 12:51:51]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 12:51:51]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:51:51]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 12:51:51]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:51:51]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:51:51]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 12:51:51]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 12:51:51]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 12:51:51]     ✓ ACCEPTED (screen pos: (656, 687, 707, 715))
+[2025-12-30 12:51:51]   Detected: 'Summon' (confidence: 1.00)
+[2025-12-30 12:51:51]     -> Best match: 'Summon' (score: 100)
+[2025-12-30 12:51:51]     ✓ ACCEPTED (screen pos: (871, 685, 973, 715))
+[2025-12-30 12:51:51] 
+--- RESULT ---
+[2025-12-30 12:51:51] Found tags: ['Defender', 'Vanguard', 'Melee', 'DPS', 'Summon']
+[2025-12-30 12:51:51] ==================================================
+
+[2025-12-30 12:51:51] 
+==================================================
+[2025-12-30 12:51:51] NEW SCAN STARTED
+[2025-12-30 12:51:51] ==================================================
+[2025-12-30 12:51:51] Screen size: 1920x1080
+[2025-12-30 12:51:51] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:51:51] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:51:51] Running EasyOCR...
+[2025-12-30 12:51:52] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:51:52]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 12:51:52]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 12:51:52]     ✓ ACCEPTED (screen pos: (627, 581, 736, 612))
+[2025-12-30 12:51:52]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 12:51:52]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:51:52]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 12:51:52]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 12:51:52]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 12:51:52]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 12:51:52]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 12:51:52]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 12:51:52]     ✓ ACCEPTED (screen pos: (656, 687, 707, 715))
+[2025-12-30 12:51:52]   Detected: 'Summon' (confidence: 1.00)
+[2025-12-30 12:51:52]     -> Best match: 'Summon' (score: 100)
+[2025-12-30 12:51:52]     ✓ ACCEPTED (screen pos: (871, 685, 973, 715))
+[2025-12-30 12:51:52] 
+--- RESULT ---
+[2025-12-30 12:51:52] Found tags: ['Defender', 'Vanguard', 'Melee', 'DPS', 'Summon']
+[2025-12-30 12:51:52] ==================================================
+
+[2025-12-30 12:52:14] 
+==================================================
+[2025-12-30 12:52:14] NEW SCAN STARTED
+[2025-12-30 12:52:14] ==================================================
+[2025-12-30 12:52:14] Screen size: 1920x1080
+[2025-12-30 12:52:14] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:52:14] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:52:14] Running EasyOCR...
+[2025-12-30 12:52:15] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:52:15]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 12:52:15]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 12:52:15]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 12:52:15]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 12:52:15]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 12:52:15]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 12:52:15]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 12:52:15]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:52:15]     ✓ ACCEPTED (screen pos: (1108, 581, 1222, 618))
+[2025-12-30 12:52:15]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:52:15]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:52:15]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 12:52:15]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 12:52:15]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 12:52:15]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 12:52:15] 
+--- RESULT ---
+[2025-12-30 12:52:15] Found tags: ['Medic', 'Caster', 'Vanguard', 'Starter', 'AoE']
+[2025-12-30 12:52:15] ==================================================
+
+[2025-12-30 12:52:36] 
+==================================================
+[2025-12-30 12:52:36] NEW SCAN STARTED
+[2025-12-30 12:52:36] ==================================================
+[2025-12-30 12:52:36] Screen size: 1920x1080
+[2025-12-30 12:52:36] ROI crop: x=576-1305, y=540-777
+[2025-12-30 12:52:36] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 12:52:36] Running EasyOCR...
+[2025-12-30 12:52:36] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 12:52:36]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 12:52:36]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 12:52:36]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 12:52:36]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 12:52:36]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 12:52:36]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 12:52:36]   Detected: 'Vanguard' (confidence: 0.97)
+[2025-12-30 12:52:36]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 12:52:36]     ✓ ACCEPTED (screen pos: (1107, 580, 1222, 618))
+[2025-12-30 12:52:36]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 12:52:36]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 12:52:36]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 12:52:36]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 12:52:36]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 12:52:36]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 12:52:36] 
+--- RESULT ---
+[2025-12-30 12:52:36] Found tags: ['Medic', 'Caster', 'Vanguard', 'Starter', 'AoE']
+[2025-12-30 12:52:36] ==================================================
+
+[2025-12-30 12:58:11] Initializing EasyOCR...
+[2025-12-30 12:58:11] GPU detected: NVIDIA GeForce RTX 3050
+[2025-12-30 12:58:13] EasyOCR initialized (GPU=True).
+[2025-12-30 13:00:58] Initializing EasyOCR...
+[2025-12-30 13:00:58] No GPU detected, using CPU
+[2025-12-30 13:00:59] EasyOCR initialized (GPU=False).
+[2025-12-30 13:01:28] Initializing EasyOCR...
+[2025-12-30 13:01:28] No GPU detected, using CPU
+[2025-12-30 13:01:29] EasyOCR initialized (GPU=False).
+[2025-12-30 13:07:02] Initializing EasyOCR...
+[2025-12-30 13:07:02] PyTorch version: 2.9.1+cpu
+[2025-12-30 13:07:02] CUDA built: True
+[2025-12-30 13:07:02] CUDA available: False
+[2025-12-30 13:07:02] CUDA not available. Possible reasons:
+[2025-12-30 13:07:02]   - PyTorch CPU-only version installed
+[2025-12-30 13:07:02]   - NVIDIA drivers not installed
+[2025-12-30 13:07:02]   - No NVIDIA GPU present
+[2025-12-30 13:07:02] To install PyTorch with CUDA, run:
+[2025-12-30 13:07:02]   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+[2025-12-30 13:07:03] EasyOCR initialized (GPU=False).
+[2025-12-30 13:08:11] Initializing EasyOCR...
+[2025-12-30 13:08:11] PyTorch version: 2.9.1+cpu
+[2025-12-30 13:08:11] CUDA built: True
+[2025-12-30 13:08:11] CUDA available: False
+[2025-12-30 13:08:11] CUDA not available. Possible reasons:
+[2025-12-30 13:08:11]   - PyTorch CPU-only version installed
+[2025-12-30 13:08:11]   - NVIDIA drivers not installed
+[2025-12-30 13:08:11]   - No NVIDIA GPU present
+[2025-12-30 13:08:11] To install PyTorch with CUDA, run:
+[2025-12-30 13:08:11]   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+[2025-12-30 13:08:12] EasyOCR initialized (GPU=False).
+[2025-12-30 13:09:04] Initializing EasyOCR...
+[2025-12-30 13:09:04] PyTorch version: 2.9.1+cpu
+[2025-12-30 13:09:04] CUDA built: True
+[2025-12-30 13:09:04] CUDA available: False
+[2025-12-30 13:09:04] CUDA not available. Possible reasons:
+[2025-12-30 13:09:04]   - PyTorch CPU-only version installed
+[2025-12-30 13:09:04]   - NVIDIA drivers not installed
+[2025-12-30 13:09:04]   - No NVIDIA GPU present
+[2025-12-30 13:09:04] To install PyTorch with CUDA, run:
+[2025-12-30 13:09:04]   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+[2025-12-30 13:09:06] EasyOCR initialized (GPU=False).
+[2025-12-30 13:09:31] 
+==================================================
+[2025-12-30 13:09:31] NEW SCAN STARTED
+[2025-12-30 13:09:31] ==================================================
+[2025-12-30 13:09:31] Screen size: 1920x1080
+[2025-12-30 13:09:31] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:09:31] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:09:31] Running EasyOCR...
+[2025-12-30 13:09:33] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:09:33]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:09:33]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:09:33]     ✓ ACCEPTED (screen pos: (627, 581, 736, 612))
+[2025-12-30 13:09:33]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:09:33]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:09:33]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 13:09:33]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:09:33]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:09:33]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:09:33]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:09:33]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:09:33]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:09:33]   Detected: 'Defense' (confidence: 1.00)
+[2025-12-30 13:09:33]     -> Best match: 'Defense' (score: 100)
+[2025-12-30 13:09:33]     ✓ ACCEPTED (screen pos: (876, 685, 971, 716))
+[2025-12-30 13:09:33] 
+--- RESULT ---
+[2025-12-30 13:09:33] Found tags: ['Defender', 'Vanguard', 'Melee', 'Starter', 'Defense']
+[2025-12-30 13:09:33] ==================================================
+
+[2025-12-30 13:09:52] 
+==================================================
+[2025-12-30 13:09:52] NEW SCAN STARTED
+[2025-12-30 13:09:52] ==================================================
+[2025-12-30 13:09:52] Screen size: 1920x1080
+[2025-12-30 13:09:52] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:09:52] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:09:52] Running EasyOCR...
+[2025-12-30 13:09:54] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:09:54]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:09:54]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:09:54]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:09:54]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:09:54]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:09:54]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 13:09:54]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:09:54]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:09:54]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:09:54]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:09:54]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:09:54]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:09:54]   Detected: 'DP-Recovery' (confidence: 0.90)
+[2025-12-30 13:09:54]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:09:54]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:09:54] 
+--- RESULT ---
+[2025-12-30 13:09:54] Found tags: ['Guard', 'Defender', 'Supporter', 'Starter', 'DP-Recovery']
+[2025-12-30 13:09:54] ==================================================
+
+[2025-12-30 13:10:26] 
+==================================================
+[2025-12-30 13:10:26] NEW SCAN STARTED
+[2025-12-30 13:10:26] ==================================================
+[2025-12-30 13:10:26] Screen size: 1920x1080
+[2025-12-30 13:10:26] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:10:26] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:10:26] Running EasyOCR...
+[2025-12-30 13:10:28] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:10:28]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:10:28]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:10:28]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:10:28]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:10:28]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:10:28]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 13:10:28]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:10:28]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:10:28]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:10:28]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:10:28]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:10:28]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:10:28]   Detected: 'DP-Recovery' (confidence: 0.85)
+[2025-12-30 13:10:28]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:10:28]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:10:28] 
+--- RESULT ---
+[2025-12-30 13:10:28] Found tags: ['Guard', 'Defender', 'Supporter', 'Starter', 'DP-Recovery']
+[2025-12-30 13:10:28] ==================================================
+
+[2025-12-30 13:10:40] 
+==================================================
+[2025-12-30 13:10:40] NEW SCAN STARTED
+[2025-12-30 13:10:40] ==================================================
+[2025-12-30 13:10:40] Screen size: 1920x1080
+[2025-12-30 13:10:40] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:10:40] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:10:40] Running EasyOCR...
+[2025-12-30 13:10:42] 
+--- EASYOCR RAW OUTPUT (12 detections) ---
+[2025-12-30 13:10:42]   Detected: '3' (confidence: 0.16)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: 'F' (confidence: 0.02)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: '7' (confidence: 0.18)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: '7' (confidence: 0.54)
+[2025-12-30 13:10:42]     ✗ Skipped (too short)
+[2025-12-30 13:10:42]   Detected: 'E' (confidence: 0.76)
+[2025-12-30 13:10:42]     ✗ Skipped (too short)
+[2025-12-30 13:10:42]   Detected: 'F' (confidence: 0.00)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: 'DHODECICAMT' (confidence: 0.09)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: '1' (confidence: 0.90)
+[2025-12-30 13:10:42]     ✗ Skipped (too short)
+[2025-12-30 13:10:42]   Detected: '0' (confidence: 0.13)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: '{' (confidence: 0.08)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: '{' (confidence: 0.18)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42]   Detected: '3' (confidence: 0.18)
+[2025-12-30 13:10:42]     ✗ Skipped (confidence < 0.3)
+[2025-12-30 13:10:42] 
+--- RESULT ---
+[2025-12-30 13:10:42] Found tags: []
+[2025-12-30 13:10:42] ==================================================
+
+[2025-12-30 13:10:45] 
+==================================================
+[2025-12-30 13:10:45] NEW SCAN STARTED
+[2025-12-30 13:10:45] ==================================================
+[2025-12-30 13:10:45] Screen size: 1920x1080
+[2025-12-30 13:10:45] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:10:45] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:10:45] Running EasyOCR...
+[2025-12-30 13:10:47] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:10:47]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:10:47]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:10:47]     ✓ ACCEPTED (screen pos: (627, 581, 736, 612))
+[2025-12-30 13:10:47]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:10:47]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:10:47]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 13:10:47]   Detected: 'Caster' (confidence: 1.00)
+[2025-12-30 13:10:47]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:10:47]     ✓ ACCEPTED (screen pos: (1124, 580, 1205, 614))
+[2025-12-30 13:10:47]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:10:47]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:10:47]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:10:47]   Detected: 'DP-Recovery' (confidence: 0.90)
+[2025-12-30 13:10:47]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:10:47]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:10:47] 
+--- RESULT ---
+[2025-12-30 13:10:47] Found tags: ['Defender', 'Supporter', 'Caster', 'Starter', 'DP-Recovery']
+[2025-12-30 13:10:47] ==================================================
+
+[2025-12-30 13:16:46] Initializing EasyOCR...
+[2025-12-30 13:16:46] PyTorch version: 2.9.1+cpu
+[2025-12-30 13:16:46] PyTorch compiled with CUDA: False
+[2025-12-30 13:16:46] cuDNN available: False
+[2025-12-30 13:16:46] CUDA runtime available: False
+[2025-12-30 13:16:46] 
+[2025-12-30 13:16:46] ⚠ CUDA not available. Diagnostic info:
+[2025-12-30 13:16:46]   → PyTorch was installed WITHOUT CUDA support
+[2025-12-30 13:16:46]   → Fix: pip uninstall torch && pip install torch --index-url https://download.pytorch.org/whl/cu118
+[2025-12-30 13:16:46] 
+[2025-12-30 13:16:47] EasyOCR initialized (GPU=False).
+[2025-12-30 13:24:21] Initializing EasyOCR...
+[2025-12-30 13:24:21] PyTorch version: 2.7.1+cu118
+[2025-12-30 13:24:21] PyTorch compiled with CUDA: True
+[2025-12-30 13:24:21]   CUDA version in PyTorch: 11.8
+[2025-12-30 13:24:21] cuDNN available: True
+[2025-12-30 13:24:21]   cuDNN version: 90100
+[2025-12-30 13:24:21] CUDA runtime available: True
+[2025-12-30 13:24:21] GPU count: 1
+[2025-12-30 13:24:21]   GPU 0: NVIDIA GeForce RTX 3050
+[2025-12-30 13:24:21]     Memory: 6.0 GB
+[2025-12-30 13:24:21]     Compute capability: 8.6
+[2025-12-30 13:24:23] EasyOCR initialized (GPU=True).
+[2025-12-30 13:24:39] 
+==================================================
+[2025-12-30 13:24:39] NEW SCAN STARTED
+[2025-12-30 13:24:39] ==================================================
+[2025-12-30 13:24:39] Screen size: 1920x1080
+[2025-12-30 13:24:39] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:24:39] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:24:39] Running EasyOCR...
+[2025-12-30 13:24:39] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:24:39]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:24:40]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:24:40]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:24:40]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:24:40]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:24:40]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 13:24:40]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:24:40]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:24:40]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:24:40]   Detected: 'Vanguard' (confidence: 0.98)
+[2025-12-30 13:24:40]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:24:40]     ✓ ACCEPTED (screen pos: (624, 686, 738, 722))
+[2025-12-30 13:24:40]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 13:24:40]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:24:40]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:24:40] 
+--- RESULT ---
+[2025-12-30 13:24:40] Found tags: ['Guard', 'Defender', 'Supporter', 'Vanguard', 'AoE']
+[2025-12-30 13:24:40] ==================================================
+
+[2025-12-30 13:24:48] 
+==================================================
+[2025-12-30 13:24:48] NEW SCAN STARTED
+[2025-12-30 13:24:48] ==================================================
+[2025-12-30 13:24:48] Screen size: 1920x1080
+[2025-12-30 13:24:48] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:24:48] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:24:48] Running EasyOCR...
+[2025-12-30 13:24:49] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:24:49]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:24:49]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:24:49]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:24:49]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:24:49]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:24:49]     ✓ ACCEPTED (screen pos: (1107, 580, 1222, 618))
+[2025-12-30 13:24:49]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:24:49]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:24:49]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:24:49]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 13:24:49]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:24:49]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:24:49]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:24:49]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:24:49]     ✓ ACCEPTED (screen pos: (638, 576, 724, 623))
+[2025-12-30 13:24:49] 
+--- RESULT ---
+[2025-12-30 13:24:49] Found tags: ['Medic', 'Vanguard', 'Starter', 'AoE', 'Sniper']
+[2025-12-30 13:24:49] ==================================================
+
+[2025-12-30 13:24:54] 
+==================================================
+[2025-12-30 13:24:54] NEW SCAN STARTED
+[2025-12-30 13:24:54] ==================================================
+[2025-12-30 13:24:54] Screen size: 1920x1080
+[2025-12-30 13:24:54] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:24:54] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:24:54] Running EasyOCR...
+[2025-12-30 13:24:54] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:24:54]   Detected: 'Supporter' (confidence: 0.81)
+[2025-12-30 13:24:54]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:24:54]     ✓ ACCEPTED (screen pos: (621, 580, 741, 620))
+[2025-12-30 13:24:54]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:24:54]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:24:54]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 13:24:54]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:24:54]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:24:54]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:24:54]   Detected: 'DP-Recovery' (confidence: 0.97)
+[2025-12-30 13:24:54]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:24:54]     ✓ ACCEPTED (screen pos: (603, 683, 758, 721))
+[2025-12-30 13:24:54]   Detected: 'Defense' (confidence: 1.00)
+[2025-12-30 13:24:54]     -> Best match: 'Defense' (score: 100)
+[2025-12-30 13:24:54]     ✓ ACCEPTED (screen pos: (876, 685, 971, 716))
+[2025-12-30 13:24:54] 
+--- RESULT ---
+[2025-12-30 13:24:54] Found tags: ['Supporter', 'Vanguard', 'Melee', 'DP-Recovery', 'Defense']
+[2025-12-30 13:24:54] ==================================================
+
+[2025-12-30 13:25:01] 
+==================================================
+[2025-12-30 13:25:01] NEW SCAN STARTED
+[2025-12-30 13:25:01] ==================================================
+[2025-12-30 13:25:01] Screen size: 1920x1080
+[2025-12-30 13:25:01] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:25:01] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:25:01] Running EasyOCR...
+[2025-12-30 13:25:01] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:25:01]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:25:01]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:25:01]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 13:25:01]   Detected: 'Caster' (confidence: 1.00)
+[2025-12-30 13:25:01]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:25:01]     ✓ ACCEPTED (screen pos: (1124, 580, 1205, 614))
+[2025-12-30 13:25:01]   Detected: 'Vanguard' (confidence: 0.98)
+[2025-12-30 13:25:01]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:25:01]     ✓ ACCEPTED (screen pos: (624, 686, 738, 722))
+[2025-12-30 13:25:01]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:25:01]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:25:01]     ✓ ACCEPTED (screen pos: (887, 686, 960, 716))
+[2025-12-30 13:25:01]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:25:01]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:25:01]     ✓ ACCEPTED (screen pos: (638, 576, 724, 623))
+[2025-12-30 13:25:01] 
+--- RESULT ---
+[2025-12-30 13:25:01] Found tags: ['Defender', 'Caster', 'Vanguard', 'Melee', 'Sniper']
+[2025-12-30 13:25:01] ==================================================
+
+[2025-12-30 13:28:01] 
+==================================================
+[2025-12-30 13:28:01] NEW SCAN STARTED
+[2025-12-30 13:28:01] ==================================================
+[2025-12-30 13:28:01] Screen size: 1920x1080
+[2025-12-30 13:28:01] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:28:01] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:28:01] Running EasyOCR...
+[2025-12-30 13:28:02] 
+--- EASYOCR RAW OUTPUT (6 detections) ---
+[2025-12-30 13:28:02]   Detected: 'Expedite' (confidence: 1.00)
+[2025-12-30 13:28:02]     -> Best match: 'Medic' (score: 54)
+[2025-12-30 13:28:02]     ✗ Rejected (score < 75)
+[2025-12-30 13:28:02]   Detected: 'Cancel' (confidence: 0.95)
+[2025-12-30 13:28:02]     -> Best match: 'Caster' (score: 50)
+[2025-12-30 13:28:02]     ✗ Rejected (score < 75)
+[2025-12-30 13:28:02]   Detected: '4' (confidence: 0.77)
+[2025-12-30 13:28:02]     ✗ Skipped (too short)
+[2025-12-30 13:28:02]   Detected: 'Class' (confidence: 1.00)
+[2025-12-30 13:28:02]     -> Best match: 'Caster' (score: 55)
+[2025-12-30 13:28:02]     ✗ Rejected (score < 75)
+[2025-12-30 13:28:02]   Detected: 'Caste' (confidence: 0.99)
+[2025-12-30 13:28:02]     -> Best match: 'Caster' (score: 91)
+[2025-12-30 13:28:02]     ✓ ACCEPTED (screen pos: (1245, 736, 1305, 767))
+[2025-12-30 13:28:02]   Detected: 'Tag' (confidence: 1.00)
+[2025-12-30 13:28:02]     -> Best match: 'Vanguard' (score: 60)
+[2025-12-30 13:28:02]     ✗ Rejected (score < 75)
+[2025-12-30 13:28:02] 
+--- RESULT ---
+[2025-12-30 13:28:02] Found tags: ['Caster']
+[2025-12-30 13:28:02] ==================================================
+
+[2025-12-30 13:29:35] Initializing EasyOCR...
+[2025-12-30 13:29:35] PyTorch version: 2.7.1+cu118
+[2025-12-30 13:29:35] PyTorch compiled with CUDA: True
+[2025-12-30 13:29:35]   CUDA version in PyTorch: 11.8
+[2025-12-30 13:29:35] cuDNN available: True
+[2025-12-30 13:29:35]   cuDNN version: 90100
+[2025-12-30 13:29:36] CUDA runtime available: True
+[2025-12-30 13:29:36] GPU count: 1
+[2025-12-30 13:29:36]   GPU 0: NVIDIA GeForce RTX 3050
+[2025-12-30 13:29:36]     Memory: 6.0 GB
+[2025-12-30 13:29:36]     Compute capability: 8.6
+[2025-12-30 13:29:37] EasyOCR initialized (GPU=True).
+[2025-12-30 13:29:57] 
+==================================================
+[2025-12-30 13:29:57] NEW SCAN STARTED
+[2025-12-30 13:29:57] ==================================================
+[2025-12-30 13:29:57] Screen size: 1920x1080
+[2025-12-30 13:29:57] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:29:57] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:29:57] Running EasyOCR...
+[2025-12-30 13:29:58] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:29:58]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:29:58]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:29:58]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:29:58]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 13:29:58]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:29:58]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 13:29:58]   Detected: 'Starter' (confidence: 0.82)
+[2025-12-30 13:29:58]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:29:58]     ✓ ACCEPTED (screen pos: (1122, 581, 1209, 612))
+[2025-12-30 13:29:58]   Detected: 'DP-Recovery' (confidence: 0.97)
+[2025-12-30 13:29:58]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:29:58]     ✓ ACCEPTED (screen pos: (603, 683, 758, 721))
+[2025-12-30 13:29:58]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 13:29:58]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 13:29:58]     ✓ ACCEPTED (screen pos: (899, 687, 949, 715))
+[2025-12-30 13:29:58] 
+--- RESULT ---
+[2025-12-30 13:29:58] Found tags: ['Guard', 'Caster', 'Starter', 'DP-Recovery', 'DPS']
+[2025-12-30 13:29:58] ==================================================
+
+[2025-12-30 13:31:11] Initializing EasyOCR...
+[2025-12-30 13:31:11] PyTorch version: 2.7.1+cu118
+[2025-12-30 13:31:11] PyTorch compiled with CUDA: True
+[2025-12-30 13:31:11]   CUDA version in PyTorch: 11.8
+[2025-12-30 13:31:11] cuDNN available: True
+[2025-12-30 13:31:11]   cuDNN version: 90100
+[2025-12-30 13:31:11] CUDA runtime available: True
+[2025-12-30 13:31:11] GPU count: 1
+[2025-12-30 13:31:11]   GPU 0: NVIDIA GeForce RTX 3050
+[2025-12-30 13:31:11]     Memory: 6.0 GB
+[2025-12-30 13:31:11]     Compute capability: 8.6
+[2025-12-30 13:31:13] EasyOCR initialized (GPU=True).
+[2025-12-30 13:31:17] 
+==================================================
+[2025-12-30 13:31:17] NEW SCAN STARTED
+[2025-12-30 13:31:17] ==================================================
+[2025-12-30 13:31:17] Screen size: 1920x1080
+[2025-12-30 13:31:17] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:31:17] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:31:17] Running EasyOCR...
+[2025-12-30 13:31:18] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:31:18]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:31:18]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:31:18]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:31:18]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 13:31:18]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:31:18]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 13:31:18]   Detected: 'Vanguard' (confidence: 0.97)
+[2025-12-30 13:31:18]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:31:18]     ✓ ACCEPTED (screen pos: (1107, 580, 1222, 618))
+[2025-12-30 13:31:18]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:31:18]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:31:18]     ✓ ACCEPTED (screen pos: (645, 685, 718, 716))
+[2025-12-30 13:31:18]   Detected: 'Survival' (confidence: 1.00)
+[2025-12-30 13:31:18]     -> Best match: 'Survival' (score: 100)
+[2025-12-30 13:31:18]     ✓ ACCEPTED (screen pos: (876, 685, 970, 716))
+[2025-12-30 13:31:18] 
+--- RESULT ---
+[2025-12-30 13:31:18] Found tags: ['Medic', 'Caster', 'Vanguard', 'Melee', 'Survival']
+[2025-12-30 13:31:18] ==================================================
+
+[2025-12-30 13:31:25] 
+==================================================
+[2025-12-30 13:31:25] NEW SCAN STARTED
+[2025-12-30 13:31:25] ==================================================
+[2025-12-30 13:31:25] Screen size: 1920x1080
+[2025-12-30 13:31:25] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:31:25] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:31:25] Running EasyOCR...
+[2025-12-30 13:31:25] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:31:25]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:31:25]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:31:25]     ✓ ACCEPTED (screen pos: (644, 580, 718, 612))
+[2025-12-30 13:31:25]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:31:25]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:31:25]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 13:31:25]   Detected: 'Vanguard' (confidence: 0.97)
+[2025-12-30 13:31:25]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:31:25]     ✓ ACCEPTED (screen pos: (1107, 580, 1222, 618))
+[2025-12-30 13:31:25]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:31:25]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:31:25]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:31:25]   Detected: 'Slow' (confidence: 1.00)
+[2025-12-30 13:31:25]     -> Best match: 'Slow' (score: 100)
+[2025-12-30 13:31:25]     ✓ ACCEPTED (screen pos: (892, 685, 952, 716))
+[2025-12-30 13:31:25] 
+--- RESULT ---
+[2025-12-30 13:31:25] Found tags: ['Medic', 'Supporter', 'Vanguard', 'Starter', 'Slow']
+[2025-12-30 13:31:25] ==================================================
+
+[2025-12-30 13:31:29] 
+==================================================
+[2025-12-30 13:31:29] NEW SCAN STARTED
+[2025-12-30 13:31:29] ==================================================
+[2025-12-30 13:31:29] Screen size: 1920x1080
+[2025-12-30 13:31:29] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:31:29] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:31:29] Running EasyOCR...
+[2025-12-30 13:31:30] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:31:30]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:31:30]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:31:30]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:31:30]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 13:31:30]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:31:30]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 13:31:30]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:31:30]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:31:30]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:31:30]   Detected: 'Ranged' (confidence: 1.00)
+[2025-12-30 13:31:30]     -> Best match: 'Ranged' (score: 100)
+[2025-12-30 13:31:30]     ✓ ACCEPTED (screen pos: (635, 686, 726, 722))
+[2025-12-30 13:31:30]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 13:31:30]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 13:31:30]     ✓ ACCEPTED (screen pos: (899, 687, 949, 715))
+[2025-12-30 13:31:30] 
+--- RESULT ---
+[2025-12-30 13:31:30] Found tags: ['Guard', 'Caster', 'Melee', 'Ranged', 'DPS']
+[2025-12-30 13:31:30] ==================================================
+
+[2025-12-30 13:31:40] 
+==================================================
+[2025-12-30 13:31:40] NEW SCAN STARTED
+[2025-12-30 13:31:40] ==================================================
+[2025-12-30 13:31:40] Screen size: 1920x1080
+[2025-12-30 13:31:40] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:31:40] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:31:40] Running EasyOCR...
+[2025-12-30 13:31:41] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:31:41]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:31:41]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:31:41]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:31:41]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:31:41]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:31:41]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:31:41]   Detected: 'DP-Recovery' (confidence: 0.97)
+[2025-12-30 13:31:41]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:31:41]     ✓ ACCEPTED (screen pos: (603, 683, 758, 721))
+[2025-12-30 13:31:41]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 13:31:41]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:31:41]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:31:41]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:31:41]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:31:41]     ✓ ACCEPTED (screen pos: (880, 578, 966, 622))
+[2025-12-30 13:31:41] 
+--- RESULT ---
+[2025-12-30 13:31:41] Found tags: ['Guard', 'Melee', 'DP-Recovery', 'AoE', 'Sniper']
+[2025-12-30 13:31:41] ==================================================
+
+[2025-12-30 13:33:02] 
+==================================================
+[2025-12-30 13:33:02] NEW SCAN STARTED
+[2025-12-30 13:33:02] ==================================================
+[2025-12-30 13:33:02] Screen size: 1920x1080
+[2025-12-30 13:33:02] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:33:02] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:33:02] Running EasyOCR...
+[2025-12-30 13:33:02] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:33:02]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:33:02]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:33:02]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:33:02]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:33:02]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:33:02]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 13:33:02]   Detected: 'Caster' (confidence: 1.00)
+[2025-12-30 13:33:02]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:33:02]     ✓ ACCEPTED (screen pos: (1124, 580, 1205, 614))
+[2025-12-30 13:33:02]   Detected: 'Vanguard' (confidence: 0.98)
+[2025-12-30 13:33:02]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:33:02]     ✓ ACCEPTED (screen pos: (624, 686, 738, 722))
+[2025-12-30 13:33:02]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 13:33:02]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:33:02]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:33:02] 
+--- RESULT ---
+[2025-12-30 13:33:02] Found tags: ['Guard', 'Defender', 'Caster', 'Vanguard', 'AoE']
+[2025-12-30 13:33:02] ==================================================
+
+[2025-12-30 13:33:09] 
+==================================================
+[2025-12-30 13:33:09] NEW SCAN STARTED
+[2025-12-30 13:33:09] ==================================================
+[2025-12-30 13:33:09] Screen size: 1920x1080
+[2025-12-30 13:33:09] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:33:09] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:33:09] Running EasyOCR...
+[2025-12-30 13:33:09] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:33:09]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:33:09]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:33:09]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:33:09]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:33:09]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:33:09]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 13:33:09]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:33:09]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:33:09]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:33:09]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:33:09]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:33:09]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:33:09]   Detected: 'AoE' (confidence: 0.59)
+[2025-12-30 13:33:10]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:33:10]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:33:10] 
+--- RESULT ---
+[2025-12-30 13:33:10] Found tags: ['Guard', 'Vanguard', 'Melee', 'Starter', 'AoE']
+[2025-12-30 13:33:10] ==================================================
+
+[2025-12-30 13:33:15] 
+==================================================
+[2025-12-30 13:33:15] NEW SCAN STARTED
+[2025-12-30 13:33:15] ==================================================
+[2025-12-30 13:33:15] Screen size: 1920x1080
+[2025-12-30 13:33:15] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:33:15] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:33:15] Running EasyOCR...
+[2025-12-30 13:33:15] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:33:15]   Detected: 'Supporter' (confidence: 0.81)
+[2025-12-30 13:33:15]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:33:15]     ✓ ACCEPTED (screen pos: (621, 580, 741, 620))
+[2025-12-30 13:33:15]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:33:15]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:33:15]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 13:33:15]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:33:15]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:33:15]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:33:15]   Detected: 'DP-Recovery' (confidence: 0.97)
+[2025-12-30 13:33:15]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:33:15]     ✓ ACCEPTED (screen pos: (604, 683, 758, 721))
+[2025-12-30 13:33:15]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 13:33:15]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:33:15]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:33:15] 
+--- RESULT ---
+[2025-12-30 13:33:15] Found tags: ['Supporter', 'Vanguard', 'Melee', 'DP-Recovery', 'AoE']
+[2025-12-30 13:33:15] ==================================================
+
+[2025-12-30 13:33:26] 
+==================================================
+[2025-12-30 13:33:26] NEW SCAN STARTED
+[2025-12-30 13:33:26] ==================================================
+[2025-12-30 13:33:26] Screen size: 1920x1080
+[2025-12-30 13:33:26] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:33:26] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:33:26] Running EasyOCR...
+[2025-12-30 13:33:27] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:33:27]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:33:27]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:33:27]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:33:27]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:33:27]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:33:27]     ✓ ACCEPTED (screen pos: (1108, 581, 1222, 618))
+[2025-12-30 13:33:27]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:33:27]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:33:27]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:33:27]   Detected: 'Defense' (confidence: 1.00)
+[2025-12-30 13:33:27]     -> Best match: 'Defense' (score: 100)
+[2025-12-30 13:33:27]     ✓ ACCEPTED (screen pos: (876, 685, 971, 716))
+[2025-12-30 13:33:27]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:33:27]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:33:27]     ✓ ACCEPTED (screen pos: (638, 576, 724, 623))
+[2025-12-30 13:33:27] 
+--- RESULT ---
+[2025-12-30 13:33:27] Found tags: ['Medic', 'Vanguard', 'Starter', 'Defense', 'Sniper']
+[2025-12-30 13:33:27] ==================================================
+
+[2025-12-30 13:34:01] Initializing EasyOCR...
+[2025-12-30 13:34:01] PyTorch version: 2.7.1+cu118
+[2025-12-30 13:34:01] PyTorch compiled with CUDA: True
+[2025-12-30 13:34:01]   CUDA version in PyTorch: 11.8
+[2025-12-30 13:34:01] cuDNN available: True
+[2025-12-30 13:34:01]   cuDNN version: 90100
+[2025-12-30 13:34:01] CUDA runtime available: True
+[2025-12-30 13:34:01] GPU count: 1
+[2025-12-30 13:34:01]   GPU 0: NVIDIA GeForce RTX 3050
+[2025-12-30 13:34:01]     Memory: 6.0 GB
+[2025-12-30 13:34:01]     Compute capability: 8.6
+[2025-12-30 13:34:03] EasyOCR initialized (GPU=True).
+[2025-12-30 13:34:32] Initializing EasyOCR...
+[2025-12-30 13:34:32] PyTorch version: 2.7.1+cu118
+[2025-12-30 13:34:32] PyTorch compiled with CUDA: True
+[2025-12-30 13:34:32]   CUDA version in PyTorch: 11.8
+[2025-12-30 13:34:32] cuDNN available: True
+[2025-12-30 13:34:32]   cuDNN version: 90100
+[2025-12-30 13:34:32] CUDA runtime available: True
+[2025-12-30 13:34:32] GPU count: 1
+[2025-12-30 13:34:32]   GPU 0: NVIDIA GeForce RTX 3050
+[2025-12-30 13:34:32]     Memory: 6.0 GB
+[2025-12-30 13:34:32]     Compute capability: 8.6
+[2025-12-30 13:34:34] EasyOCR initialized (GPU=True).
+[2025-12-30 13:34:38] 
+==================================================
+[2025-12-30 13:34:38] NEW SCAN STARTED
+[2025-12-30 13:34:38] ==================================================
+[2025-12-30 13:34:38] Screen size: 1920x1080
+[2025-12-30 13:34:38] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:34:38] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:34:38] Running EasyOCR...
+[2025-12-30 13:34:38] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:34:38]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:34:38]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:34:38]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:34:38]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 13:34:38]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:34:38]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 13:34:38]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:34:38]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:34:38]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:34:38]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 13:34:38]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 13:34:38]     ✓ ACCEPTED (screen pos: (656, 687, 707, 715))
+[2025-12-30 13:34:38]   Detected: 'Survival' (confidence: 1.00)
+[2025-12-30 13:34:38]     -> Best match: 'Survival' (score: 100)
+[2025-12-30 13:34:38]     ✓ ACCEPTED (screen pos: (876, 685, 970, 716))
+[2025-12-30 13:34:38] 
+--- RESULT ---
+[2025-12-30 13:34:38] Found tags: ['Medic', 'Caster', 'Melee', 'DPS', 'Survival']
+[2025-12-30 13:34:38] ==================================================
+
+[2025-12-30 13:34:41] 
+==================================================
+[2025-12-30 13:34:41] NEW SCAN STARTED
+[2025-12-30 13:34:41] ==================================================
+[2025-12-30 13:34:41] Screen size: 1920x1080
+[2025-12-30 13:34:41] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:34:41] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:34:41] Running EasyOCR...
+[2025-12-30 13:34:42] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:34:42]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:34:42]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:34:42]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:34:42]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:34:42]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:34:42]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 13:34:42]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:34:42]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:34:42]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:34:42]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:34:42]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:34:42]     ✓ ACCEPTED (screen pos: (638, 686, 724, 716))
+[2025-12-30 13:34:42]   Detected: 'DP-Recovery' (confidence: 0.91)
+[2025-12-30 13:34:42]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:34:42]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:34:42] 
+--- RESULT ---
+[2025-12-30 13:34:42] Found tags: ['Medic', 'Supporter', 'Melee', 'Starter', 'DP-Recovery']
+[2025-12-30 13:34:42] ==================================================
+
+[2025-12-30 13:34:49] 
+==================================================
+[2025-12-30 13:34:49] NEW SCAN STARTED
+[2025-12-30 13:34:49] ==================================================
+[2025-12-30 13:34:49] Screen size: 1920x1080
+[2025-12-30 13:34:49] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:34:49] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:34:49] Running EasyOCR...
+[2025-12-30 13:34:49] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:34:49]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:34:49]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:34:49]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:34:49]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:34:49]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:34:49]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:34:49]   Detected: 'DP-Recovery' (confidence: 0.97)
+[2025-12-30 13:34:49]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:34:49]     ✓ ACCEPTED (screen pos: (603, 683, 758, 721))
+[2025-12-30 13:34:49]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 13:34:49]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:34:49]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:34:49]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:34:49]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:34:49]     ✓ ACCEPTED (screen pos: (638, 576, 724, 623))
+[2025-12-30 13:34:50] 
+--- RESULT ---
+[2025-12-30 13:34:50] Found tags: ['Medic', 'Melee', 'DP-Recovery', 'AoE', 'Sniper']
+[2025-12-30 13:34:50] ==================================================
+
+[2025-12-30 13:34:57] 
+==================================================
+[2025-12-30 13:34:57] NEW SCAN STARTED
+[2025-12-30 13:34:57] ==================================================
+[2025-12-30 13:34:57] Screen size: 1920x1080
+[2025-12-30 13:34:57] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:34:57] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:34:57] Running EasyOCR...
+[2025-12-30 13:34:57] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:34:57]   Detected: 'Guard' (confidence: 0.97)
+[2025-12-30 13:34:57]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:34:57]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:34:57]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:34:57]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:34:57]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:34:57]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:34:57]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:34:57]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:34:57]   Detected: 'Specialist' (confidence: 1.00)
+[2025-12-30 13:34:57]     -> Best match: 'Specialist' (score: 100)
+[2025-12-30 13:34:57]     ✓ ACCEPTED (screen pos: (623, 684, 739, 723))
+[2025-12-30 13:34:57]   Detected: 'Shift' (confidence: 1.00)
+[2025-12-30 13:34:57]     -> Best match: 'Shift' (score: 100)
+[2025-12-30 13:34:57]     ✓ ACCEPTED (screen pos: (893, 685, 953, 716))
+[2025-12-30 13:34:57] 
+--- RESULT ---
+[2025-12-30 13:34:57] Found tags: ['Guard', 'Medic', 'Supporter', 'Specialist', 'Shift']
+[2025-12-30 13:34:57] ==================================================
+
+[2025-12-30 13:35:44] Initializing EasyOCR...
+[2025-12-30 13:35:44] PyTorch version: 2.7.1+cu118
+[2025-12-30 13:35:44] PyTorch compiled with CUDA: True
+[2025-12-30 13:35:44]   CUDA version in PyTorch: 11.8
+[2025-12-30 13:35:44] cuDNN available: True
+[2025-12-30 13:35:44]   cuDNN version: 90100
+[2025-12-30 13:35:44] CUDA runtime available: True
+[2025-12-30 13:35:44] GPU count: 1
+[2025-12-30 13:35:44]   GPU 0: NVIDIA GeForce RTX 3050
+[2025-12-30 13:35:44]     Memory: 6.0 GB
+[2025-12-30 13:35:44]     Compute capability: 8.6
+[2025-12-30 13:35:46] EasyOCR initialized (GPU=True).
+[2025-12-30 13:35:50] 
+==================================================
+[2025-12-30 13:35:50] NEW SCAN STARTED
+[2025-12-30 13:35:50] ==================================================
+[2025-12-30 13:35:50] Screen size: 1920x1080
+[2025-12-30 13:35:50] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:35:50] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:35:50] Running EasyOCR...
+[2025-12-30 13:35:51] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:35:51]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:35:51]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:35:51]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:35:51]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:35:51]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:35:51]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:35:51]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:35:51]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:35:51]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:35:51]   Detected: 'Specialist' (confidence: 1.00)
+[2025-12-30 13:35:51]     -> Best match: 'Specialist' (score: 100)
+[2025-12-30 13:35:51]     ✓ ACCEPTED (screen pos: (623, 684, 739, 723))
+[2025-12-30 13:35:51]   Detected: 'Shift' (confidence: 1.00)
+[2025-12-30 13:35:51]     -> Best match: 'Shift' (score: 100)
+[2025-12-30 13:35:51]     ✓ ACCEPTED (screen pos: (893, 685, 953, 716))
+[2025-12-30 13:35:51] 
+--- RESULT ---
+[2025-12-30 13:35:51] Found tags: ['Guard', 'Medic', 'Supporter', 'Specialist', 'Shift']
+[2025-12-30 13:35:51] ==================================================
+
+[2025-12-30 13:35:53] 
+==================================================
+[2025-12-30 13:35:53] NEW SCAN STARTED
+[2025-12-30 13:35:53] ==================================================
+[2025-12-30 13:35:53] Screen size: 1920x1080
+[2025-12-30 13:35:53] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:35:53] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:35:53] Running EasyOCR...
+[2025-12-30 13:35:53] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:35:53]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:35:53]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:35:53]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:35:53]   Detected: 'Medic' (confidence: 0.66)
+[2025-12-30 13:35:53]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:35:53]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:35:53]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:35:53]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:35:53]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:35:53]   Detected: 'Specialist' (confidence: 1.00)
+[2025-12-30 13:35:53]     -> Best match: 'Specialist' (score: 100)
+[2025-12-30 13:35:53]     ✓ ACCEPTED (screen pos: (623, 684, 739, 723))
+[2025-12-30 13:35:53]   Detected: 'Shift' (confidence: 1.00)
+[2025-12-30 13:35:53]     -> Best match: 'Shift' (score: 100)
+[2025-12-30 13:35:53]     ✓ ACCEPTED (screen pos: (893, 685, 953, 716))
+[2025-12-30 13:35:53] 
+--- RESULT ---
+[2025-12-30 13:35:53] Found tags: ['Guard', 'Medic', 'Supporter', 'Specialist', 'Shift']
+[2025-12-30 13:35:53] ==================================================
+
+[2025-12-30 13:35:58] 
+==================================================
+[2025-12-30 13:35:58] NEW SCAN STARTED
+[2025-12-30 13:35:58] ==================================================
+[2025-12-30 13:35:58] Screen size: 1920x1080
+[2025-12-30 13:35:58] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:35:58] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:35:58] Running EasyOCR...
+[2025-12-30 13:35:58] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:35:58]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:35:58]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:35:58]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:35:58]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:35:58]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:35:58]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 13:35:58]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:35:58]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:35:58]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:35:58]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:35:58]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:35:58]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:35:58]   Detected: 'DP-Recovery' (confidence: 0.91)
+[2025-12-30 13:35:58]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:35:58]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:35:58] 
+--- RESULT ---
+[2025-12-30 13:35:58] Found tags: ['Medic', 'Supporter', 'Melee', 'Starter', 'DP-Recovery']
+[2025-12-30 13:35:58] ==================================================
+
+[2025-12-30 13:36:01] 
+==================================================
+[2025-12-30 13:36:01] NEW SCAN STARTED
+[2025-12-30 13:36:01] ==================================================
+[2025-12-30 13:36:01] Screen size: 1920x1080
+[2025-12-30 13:36:01] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:36:01] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:36:01] Running EasyOCR...
+[2025-12-30 13:36:01] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:36:01]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:36:01]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:36:01]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:36:01]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:36:01]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:36:01]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:36:01]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:36:01]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:36:01]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:36:01]   Detected: 'Specialist' (confidence: 1.00)
+[2025-12-30 13:36:01]     -> Best match: 'Specialist' (score: 100)
+[2025-12-30 13:36:01]     ✓ ACCEPTED (screen pos: (623, 684, 739, 723))
+[2025-12-30 13:36:01]   Detected: 'Shift' (confidence: 1.00)
+[2025-12-30 13:36:01]     -> Best match: 'Shift' (score: 100)
+[2025-12-30 13:36:01]     ✓ ACCEPTED (screen pos: (893, 685, 953, 716))
+[2025-12-30 13:36:01] 
+--- RESULT ---
+[2025-12-30 13:36:01] Found tags: ['Guard', 'Medic', 'Supporter', 'Specialist', 'Shift']
+[2025-12-30 13:36:01] ==================================================
+
+[2025-12-30 13:36:17] 
+==================================================
+[2025-12-30 13:36:17] NEW SCAN STARTED
+[2025-12-30 13:36:17] ==================================================
+[2025-12-30 13:36:17] Screen size: 1920x1080
+[2025-12-30 13:36:17] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:36:17] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:36:17] Running EasyOCR...
+[2025-12-30 13:36:17] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:36:17]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:36:17]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:36:17]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:36:17]   Detected: 'Supporter' (confidence: 0.75)
+[2025-12-30 13:36:17]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:36:17]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 13:36:17]   Detected: 'Vanguard' (confidence: 0.97)
+[2025-12-30 13:36:17]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:36:17]     ✓ ACCEPTED (screen pos: (1107, 580, 1222, 618))
+[2025-12-30 13:36:17]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:36:17]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:36:17]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:36:17]   Detected: 'DP-Recovery' (confidence: 0.91)
+[2025-12-30 13:36:17]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:36:17]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:36:17] 
+--- RESULT ---
+[2025-12-30 13:36:17] Found tags: ['Medic', 'Supporter', 'Vanguard', 'Starter', 'DP-Recovery']
+[2025-12-30 13:36:17] ==================================================
+
+[2025-12-30 13:40:10] 
+==================================================
+[2025-12-30 13:40:10] NEW SCAN STARTED
+[2025-12-30 13:40:10] ==================================================
+[2025-12-30 13:40:10] Screen size: 1920x1080
+[2025-12-30 13:40:10] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:40:10] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:40:10] Running EasyOCR...
+[2025-12-30 13:40:10] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:40:10]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:40:10]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:40:10]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:40:10]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:40:10]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:40:10]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 13:40:10]   Detected: 'Vanguard' (confidence: 0.97)
+[2025-12-30 13:40:10]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:40:10]     ✓ ACCEPTED (screen pos: (1107, 580, 1222, 618))
+[2025-12-30 13:40:10]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:40:10]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:40:10]     ✓ ACCEPTED (screen pos: (638, 686, 724, 716))
+[2025-12-30 13:40:10]   Detected: 'DP-Recovery' (confidence: 0.91)
+[2025-12-30 13:40:10]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:40:10]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:40:10] 
+--- RESULT ---
+[2025-12-30 13:40:10] Found tags: ['Medic', 'Supporter', 'Vanguard', 'Starter', 'DP-Recovery']
+[2025-12-30 13:40:10] ==================================================
+
+[2025-12-30 13:40:17] 
+==================================================
+[2025-12-30 13:40:17] NEW SCAN STARTED
+[2025-12-30 13:40:17] ==================================================
+[2025-12-30 13:40:17] Screen size: 1920x1080
+[2025-12-30 13:40:17] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:40:17] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:40:17] Running EasyOCR...
+[2025-12-30 13:40:17] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:40:17]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:40:17]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:40:17]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:40:17]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:40:17]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:40:17]     ✓ ACCEPTED (screen pos: (863, 580, 983, 620))
+[2025-12-30 13:40:17]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:40:17]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:40:17]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:40:17]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:40:17]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:40:17]     ✓ ACCEPTED (screen pos: (638, 685, 724, 716))
+[2025-12-30 13:40:17]   Detected: 'DP-Recovery' (confidence: 0.91)
+[2025-12-30 13:40:17]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:40:17]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:40:17] 
+--- RESULT ---
+[2025-12-30 13:40:17] Found tags: ['Medic', 'Supporter', 'Melee', 'Starter', 'DP-Recovery']
+[2025-12-30 13:40:17] ==================================================
+
+[2025-12-30 13:40:22] 
+==================================================
+[2025-12-30 13:40:22] NEW SCAN STARTED
+[2025-12-30 13:40:22] ==================================================
+[2025-12-30 13:40:22] Screen size: 1920x1080
+[2025-12-30 13:40:22] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:40:22] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:40:22] Running EasyOCR...
+[2025-12-30 13:40:22] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:40:22]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:40:22]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:40:22]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:40:22]   Detected: 'Caster' (confidence: 0.99)
+[2025-12-30 13:40:22]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:40:22]     ✓ ACCEPTED (screen pos: (882, 580, 963, 614))
+[2025-12-30 13:40:22]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:40:22]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:40:22]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:40:22]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 13:40:22]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 13:40:22]     ✓ ACCEPTED (screen pos: (656, 686, 706, 714))
+[2025-12-30 13:40:22]   Detected: 'Survival' (confidence: 1.00)
+[2025-12-30 13:40:22]     -> Best match: 'Survival' (score: 100)
+[2025-12-30 13:40:22]     ✓ ACCEPTED (screen pos: (876, 685, 970, 716))
+[2025-12-30 13:40:22] 
+--- RESULT ---
+[2025-12-30 13:40:22] Found tags: ['Medic', 'Caster', 'Melee', 'DPS', 'Survival']
+[2025-12-30 13:40:22] ==================================================
+
+[2025-12-30 13:40:29] 
+==================================================
+[2025-12-30 13:40:29] NEW SCAN STARTED
+[2025-12-30 13:40:29] ==================================================
+[2025-12-30 13:40:29] Screen size: 1920x1080
+[2025-12-30 13:40:29] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:40:29] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:40:29] Running EasyOCR...
+[2025-12-30 13:40:30] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:40:30]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:40:30]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:40:30]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:40:30]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:40:30]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:40:30]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:40:30]   Detected: 'DP-Recovery' (confidence: 0.97)
+[2025-12-30 13:40:30]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:40:30]     ✓ ACCEPTED (screen pos: (603, 683, 758, 721))
+[2025-12-30 13:40:30]   Detected: 'AoE' (confidence: 0.99)
+[2025-12-30 13:40:30]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:40:30]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:40:30]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:40:30]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:40:30]     ✓ ACCEPTED (screen pos: (638, 576, 724, 623))
+[2025-12-30 13:40:30] 
+--- RESULT ---
+[2025-12-30 13:40:30] Found tags: ['Medic', 'Melee', 'DP-Recovery', 'AoE', 'Sniper']
+[2025-12-30 13:40:30] ==================================================
+
+[2025-12-30 13:41:04] 
+==================================================
+[2025-12-30 13:41:04] NEW SCAN STARTED
+[2025-12-30 13:41:04] ==================================================
+[2025-12-30 13:41:04] Screen size: 1920x1080
+[2025-12-30 13:41:04] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:41:04] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:41:04] Running EasyOCR...
+[2025-12-30 13:41:04] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:41:04]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:41:04]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:41:04]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:41:04]   Detected: 'Nuker' (confidence: 1.00)
+[2025-12-30 13:41:04]     -> Best match: 'Nuker' (score: 100)
+[2025-12-30 13:41:04]     ✓ ACCEPTED (screen pos: (887, 581, 961, 612))
+[2025-12-30 13:41:04]   Detected: 'Support' (confidence: 1.00)
+[2025-12-30 13:41:04]     -> Best match: 'Support' (score: 100)
+[2025-12-30 13:41:04]     ✓ ACCEPTED (screen pos: (1116, 580, 1214, 619))
+[2025-12-30 13:41:04]   Detected: 'Defense' (confidence: 1.00)
+[2025-12-30 13:41:04]     -> Best match: 'Defense' (score: 100)
+[2025-12-30 13:41:04]     ✓ ACCEPTED (screen pos: (632, 685, 730, 719))
+[2025-12-30 13:41:04]   Detected: 'Fast-Redeploy' (confidence: 0.65)
+[2025-12-30 13:41:04]     -> Best match: 'Fast-Redeploy' (score: 100)
+[2025-12-30 13:41:04]     ✓ ACCEPTED (screen pos: (836, 681, 1009, 723))
+[2025-12-30 13:41:04] 
+--- RESULT ---
+[2025-12-30 13:41:04] Found tags: ['Medic', 'Nuker', 'Support', 'Defense', 'Fast-Redeploy']
+[2025-12-30 13:41:04] ==================================================
+
+[2025-12-30 13:41:08] 
+==================================================
+[2025-12-30 13:41:08] NEW SCAN STARTED
+[2025-12-30 13:41:08] ==================================================
+[2025-12-30 13:41:08] Screen size: 1920x1080
+[2025-12-30 13:41:08] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:41:08] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:41:08] Running EasyOCR...
+[2025-12-30 13:41:09] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:41:09]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:41:09]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:41:09]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:41:09]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:41:09]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:41:09]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 13:41:09]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:41:09]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:41:09]     ✓ ACCEPTED (screen pos: (1108, 581, 1222, 618))
+[2025-12-30 13:41:09]   Detected: 'Melee' (confidence: 0.96)
+[2025-12-30 13:41:09]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:41:09]     ✓ ACCEPTED (screen pos: (645, 686, 718, 716))
+[2025-12-30 13:41:09]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:41:09]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:41:09]     ✓ ACCEPTED (screen pos: (880, 685, 966, 716))
+[2025-12-30 13:41:09] 
+--- RESULT ---
+[2025-12-30 13:41:09] Found tags: ['Guard', 'Defender', 'Vanguard', 'Melee', 'Starter']
+[2025-12-30 13:41:09] ==================================================
+
+[2025-12-30 13:41:14] 
+==================================================
+[2025-12-30 13:41:14] NEW SCAN STARTED
+[2025-12-30 13:41:14] ==================================================
+[2025-12-30 13:41:14] Screen size: 1920x1080
+[2025-12-30 13:41:14] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:41:14] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:41:14] Running EasyOCR...
+[2025-12-30 13:41:15] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:41:15]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:41:15]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:41:15]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:41:15]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:41:15]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:41:15]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:41:15]   Detected: 'Starter' (confidence: 0.82)
+[2025-12-30 13:41:15]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:41:15]     ✓ ACCEPTED (screen pos: (1122, 581, 1209, 612))
+[2025-12-30 13:41:15]   Detected: 'DP-Recovery' (confidence: 0.97)
+[2025-12-30 13:41:15]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:41:15]     ✓ ACCEPTED (screen pos: (603, 683, 758, 721))
+[2025-12-30 13:41:15]   Detected: 'AoE' (confidence: 0.96)
+[2025-12-30 13:41:15]     -> Best match: 'AoE' (score: 100)
+[2025-12-30 13:41:15]     ✓ ACCEPTED (screen pos: (898, 686, 948, 716))
+[2025-12-30 13:41:15] 
+--- RESULT ---
+[2025-12-30 13:41:15] Found tags: ['Guard', 'Medic', 'Starter', 'DP-Recovery', 'AoE']
+[2025-12-30 13:41:15] ==================================================
+
+[2025-12-30 13:41:20] 
+==================================================
+[2025-12-30 13:41:20] NEW SCAN STARTED
+[2025-12-30 13:41:20] ==================================================
+[2025-12-30 13:41:20] Screen size: 1920x1080
+[2025-12-30 13:41:20] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:41:20] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:41:20] Running EasyOCR...
+[2025-12-30 13:41:20] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:41:20]   Detected: 'Guard' (confidence: 0.83)
+[2025-12-30 13:41:20]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:41:20]     ✓ ACCEPTED (screen pos: (644, 581, 717, 612))
+[2025-12-30 13:41:20]   Detected: 'Supporter' (confidence: 1.00)
+[2025-12-30 13:41:20]     -> Best match: 'Supporter' (score: 100)
+[2025-12-30 13:41:20]     ✓ ACCEPTED (screen pos: (1105, 580, 1225, 620))
+[2025-12-30 13:41:20]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:41:20]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:41:20]     ✓ ACCEPTED (screen pos: (645, 685, 718, 716))
+[2025-12-30 13:41:20]   Detected: 'Shift' (confidence: 1.00)
+[2025-12-30 13:41:20]     -> Best match: 'Shift' (score: 100)
+[2025-12-30 13:41:20]     ✓ ACCEPTED (screen pos: (893, 685, 953, 716))
+[2025-12-30 13:41:20]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:41:20]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:41:20]     ✓ ACCEPTED (screen pos: (880, 577, 966, 622))
+[2025-12-30 13:41:20] 
+--- RESULT ---
+[2025-12-30 13:41:20] Found tags: ['Guard', 'Supporter', 'Melee', 'Shift', 'Sniper']
+[2025-12-30 13:41:20] ==================================================
+
+[2025-12-30 13:41:42] 
+==================================================
+[2025-12-30 13:41:42] NEW SCAN STARTED
+[2025-12-30 13:41:42] ==================================================
+[2025-12-30 13:41:42] Screen size: 1920x1080
+[2025-12-30 13:41:42] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:41:42] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:41:42] Running EasyOCR...
+[2025-12-30 13:41:43] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:41:43]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:41:43]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:41:43]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:41:43]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:41:43]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:41:43]     ✓ ACCEPTED (screen pos: (1111, 581, 1220, 613))
+[2025-12-30 13:41:43]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:41:43]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:41:43]     ✓ ACCEPTED (screen pos: (644, 685, 718, 716))
+[2025-12-30 13:41:43]   Detected: 'DP-Recovery' (confidence: 0.91)
+[2025-12-30 13:41:43]     -> Best match: 'DP-Recovery' (score: 100)
+[2025-12-30 13:41:43]     ✓ ACCEPTED (screen pos: (845, 683, 1000, 721))
+[2025-12-30 13:41:43]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:41:43]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:41:43]     ✓ ACCEPTED (screen pos: (880, 578, 966, 622))
+[2025-12-30 13:41:43] 
+--- RESULT ---
+[2025-12-30 13:41:43] Found tags: ['Guard', 'Defender', 'Medic', 'DP-Recovery', 'Sniper']
+[2025-12-30 13:41:43] ==================================================
+
+[2025-12-30 13:41:47] 
+==================================================
+[2025-12-30 13:41:47] NEW SCAN STARTED
+[2025-12-30 13:41:47] ==================================================
+[2025-12-30 13:41:47] Screen size: 1920x1080
+[2025-12-30 13:41:47] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:41:47] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:41:47] Running EasyOCR...
+[2025-12-30 13:41:47] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:41:47]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:41:47]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:41:47]     ✓ ACCEPTED (screen pos: (644, 581, 718, 612))
+[2025-12-30 13:41:47]   Detected: 'Vanguard' (confidence: 1.00)
+[2025-12-30 13:41:47]     -> Best match: 'Vanguard' (score: 100)
+[2025-12-30 13:41:47]     ✓ ACCEPTED (screen pos: (866, 581, 980, 618))
+[2025-12-30 13:41:47]   Detected: 'Starter' (confidence: 0.82)
+[2025-12-30 13:41:47]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:41:47]     ✓ ACCEPTED (screen pos: (1122, 581, 1209, 612))
+[2025-12-30 13:41:47]   Detected: 'DPS' (confidence: 1.00)
+[2025-12-30 13:41:47]     -> Best match: 'DPS' (score: 100)
+[2025-12-30 13:41:47]     ✓ ACCEPTED (screen pos: (656, 687, 707, 715))
+[2025-12-30 13:41:47]   Detected: 'Survival' (confidence: 1.00)
+[2025-12-30 13:41:48]     -> Best match: 'Survival' (score: 100)
+[2025-12-30 13:41:48]     ✓ ACCEPTED (screen pos: (876, 685, 970, 716))
+[2025-12-30 13:41:48] 
+--- RESULT ---
+[2025-12-30 13:41:48] Found tags: ['Medic', 'Vanguard', 'Starter', 'DPS', 'Survival']
+[2025-12-30 13:41:48] ==================================================
+
+[2025-12-30 13:41:58] 
+==================================================
+[2025-12-30 13:41:58] NEW SCAN STARTED
+[2025-12-30 13:41:58] ==================================================
+[2025-12-30 13:41:58] Screen size: 1920x1080
+[2025-12-30 13:41:58] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:41:58] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:41:58] Running EasyOCR...
+[2025-12-30 13:41:59] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:41:59]   Detected: 'Guard' (confidence: 0.96)
+[2025-12-30 13:41:59]     -> Best match: 'Guard' (score: 100)
+[2025-12-30 13:41:59]     ✓ ACCEPTED (screen pos: (645, 581, 717, 612))
+[2025-12-30 13:41:59]   Detected: 'Defender' (confidence: 1.00)
+[2025-12-30 13:41:59]     -> Best match: 'Defender' (score: 100)
+[2025-12-30 13:41:59]     ✓ ACCEPTED (screen pos: (869, 581, 978, 612))
+[2025-12-30 13:41:59]   Detected: 'Melee' (confidence: 1.00)
+[2025-12-30 13:41:59]     -> Best match: 'Melee' (score: 100)
+[2025-12-30 13:41:59]     ✓ ACCEPTED (screen pos: (1129, 581, 1202, 612))
+[2025-12-30 13:41:59]   Detected: 'Healing' (confidence: 1.00)
+[2025-12-30 13:41:59]     -> Best match: 'Healing' (score: 100)
+[2025-12-30 13:41:59]     ✓ ACCEPTED (screen pos: (634, 682, 727, 722))
+[2025-12-30 13:41:59]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:41:59]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:41:59]     ✓ ACCEPTED (screen pos: (880, 685, 966, 716))
+[2025-12-30 13:41:59] 
+--- RESULT ---
+[2025-12-30 13:41:59] Found tags: ['Guard', 'Defender', 'Melee', 'Healing', 'Starter']
+[2025-12-30 13:41:59] ==================================================
+
+[2025-12-30 13:42:08] 
+==================================================
+[2025-12-30 13:42:08] NEW SCAN STARTED
+[2025-12-30 13:42:08] ==================================================
+[2025-12-30 13:42:08] Screen size: 1920x1080
+[2025-12-30 13:42:08] ROI crop: x=576-1305, y=540-777
+[2025-12-30 13:42:08] Scaled ROI size: 1458x474 (scale=2x)
+[2025-12-30 13:42:08] Running EasyOCR...
+[2025-12-30 13:42:09] 
+--- EASYOCR RAW OUTPUT (5 detections) ---
+[2025-12-30 13:42:09]   Detected: 'Medic' (confidence: 1.00)
+[2025-12-30 13:42:09]     -> Best match: 'Medic' (score: 100)
+[2025-12-30 13:42:09]     ✓ ACCEPTED (screen pos: (886, 581, 960, 612))
+[2025-12-30 13:42:09]   Detected: 'Caster' (confidence: 1.00)
+[2025-12-30 13:42:09]     -> Best match: 'Caster' (score: 100)
+[2025-12-30 13:42:09]     ✓ ACCEPTED (screen pos: (1124, 580, 1205, 614))
+[2025-12-30 13:42:09]   Detected: 'Ranged' (confidence: 1.00)
+[2025-12-30 13:42:09]     -> Best match: 'Ranged' (score: 100)
+[2025-12-30 13:42:09]     ✓ ACCEPTED (screen pos: (635, 686, 726, 722))
+[2025-12-30 13:42:09]   Detected: 'Starter' (confidence: 1.00)
+[2025-12-30 13:42:09]     -> Best match: 'Starter' (score: 100)
+[2025-12-30 13:42:09]     ✓ ACCEPTED (screen pos: (880, 685, 966, 716))
+[2025-12-30 13:42:09]   Detected: 'Sniper' (confidence: 1.00)
+[2025-12-30 13:42:09]     -> Best match: 'Sniper' (score: 100)
+[2025-12-30 13:42:09]     ✓ ACCEPTED (screen pos: (638, 577, 724, 622))
+[2025-12-30 13:42:09] 
+--- RESULT ---
+[2025-12-30 13:42:09] Found tags: ['Medic', 'Caster', 'Ranged', 'Starter', 'Sniper']
+[2025-12-30 13:42:09] ==================================================
+

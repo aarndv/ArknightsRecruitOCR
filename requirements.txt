@@ -1,8 +1,10 @@
 requests
-pytesseract
+easyocr
 opencv-python
 numpy
 Pillow
 keyboard
+pynput
+pyautogui
 fuzzywuzzy
 python-Levenshtein
