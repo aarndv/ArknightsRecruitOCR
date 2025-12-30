@@ -5,10 +5,6 @@ class RecruitCalculator:
         self.pool = pool
 
     def calculate(self, selected_tags, sort_mode="min"):
-        """
-        selected_tags: List of strings (e.g. ['Guard', 'DPS'])
-        sort_mode: 'min' (Safe guarantee) or 'max' (Potential high-roll)
-        """
         selected_tags = [t.lower() for t in selected_tags]
         results = []
 
@@ -44,10 +40,8 @@ class RecruitCalculator:
                 })
 
         if sort_mode == "max":
-            # Prioritize seeing 6* potentials, then guaranteed 5*
             results.sort(key=lambda x: (x['max'], x['min'], -len(x['ops'])), reverse=True)
         else:
-            # Default: Prioritize Guaranteed Rarity (Safety)
             results.sort(key=lambda x: (x['min'], x['max'], -len(x['ops'])), reverse=True)
 
         return results

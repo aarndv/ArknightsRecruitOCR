@@ -3,7 +3,6 @@ from src.overlay import OverlayApp
 
 def main():
     fetcher = GameDataFetcher()
-    
     app = OverlayApp(fetcher)
     app.run()
 

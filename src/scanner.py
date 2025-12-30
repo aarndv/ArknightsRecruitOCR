@@ -75,7 +75,6 @@ class ScreenScanner:
             return False
     
     def _log(self, message, also_print=True):
-        """Write to log file and optionally print to console"""
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         log_entry = f"[{timestamp}] {message}"
         with open(self.log_file, "a", encoding="utf-8") as f:
@@ -88,45 +87,36 @@ class ScreenScanner:
         return cv2.cvtColor(np.array(screen), cv2.COLOR_RGB2BGR)
 
     def scan_for_tags(self, img):
-        # Start new scan entry in log
         self._log("\n" + "="*50)
         self._log("NEW SCAN STARTED")
         self._log("="*50)
         
-        # --- 1. CROP ---
         h, w, _ = img.shape
         self._log(f"Screen size: {w}x{h}")
         
-        # Crop to the tag area (Job Tags section)
         y1, y2 = int(h * 0.50), int(h * 0.72)
         x1, x2 = int(w * 0.30), int(w * 0.68)
         roi = img[y1:y2, x1:x2]
         self._log(f"ROI crop: x={x1}-{x2}, y={y1}-{y2}")
 
-        # Store crop offsets for coordinate conversion
         self.crop_offset = (x1, y1)
         self.scale = 2
 
-        # --- 2. PREPROCESSING ---
-        # Scale up 2x for better OCR accuracy
         roi_resized = cv2.resize(roi, (0, 0), fx=self.scale, fy=self.scale, interpolation=cv2.INTER_LINEAR)
         self._log(f"Scaled ROI size: {roi_resized.shape[1]}x{roi_resized.shape[0]} (scale={self.scale}x)")
 
-        # Save the ROI for debugging
         cv2.imwrite("debug_roi.png", roi_resized)
 
-        # --- 3. RUN OCR with EasyOCR ---
         self._log("Running EasyOCR...")
         results = self.reader.readtext(roi_resized)
         
         self._log(f"\n--- EASYOCR RAW OUTPUT ({len(results)} detections) ---")
-        found_tags = {}  # Changed to dict: tag_name -> screen_bbox
+        found_tags = {}
         
         for (bbox, text, confidence) in results:
             text = text.strip()
             self._log(f"  Detected: '{text}' (confidence: {confidence:.2f})")
             
-            # Skip low confidence or very short text
             if confidence < 0.3:
                 self._log(f"    ✗ Skipped (confidence < 0.3)")
                 continue
@@ -134,20 +124,16 @@ class ScreenScanner:
                 self._log(f"    ✗ Skipped (too short)")
                 continue
                 
-            # Fuzzy match against valid tags
             match, score = process.extractOne(text, VALID_TAGS)
             self._log(f"    -> Best match: '{match}' (score: {score})")
             
-            # Require high score for a match
             if score >= 75:
-                # Convert bbox to screen coordinates
                 screen_bbox = self._bbox_to_screen(bbox)
                 found_tags[match] = screen_bbox
                 self._log(f"    ✓ ACCEPTED (screen pos: {screen_bbox})")
             else:
                 self._log(f"    ✗ Rejected (score < 75)")
 
-        # Save a debug image with bounding boxes
         debug_img = roi_resized.copy()
         for (bbox, text, confidence) in results:
             if confidence >= 0.3:
@@ -164,12 +150,7 @@ class ScreenScanner:
         return found_tags, debug_img
     
     def _bbox_to_screen(self, bbox):
-        """Convert OCR bbox (scaled ROI coords) to actual screen coordinates"""
-        # bbox is list of 4 points: [[x1,y1], [x2,y2], [x3,y3], [x4,y4]]
-        # Convert from scaled ROI to original screen coords
         x_offset, y_offset = self.crop_offset
-        
-        # Get bounding rectangle
         pts = np.array(bbox)
         x_min = int(pts[:, 0].min() / self.scale + x_offset)
         x_max = int(pts[:, 0].max() / self.scale + x_offset)
