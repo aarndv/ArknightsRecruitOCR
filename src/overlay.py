@@ -551,9 +551,13 @@ class OverlayApp:
 
         print(f"Processing Tags: {tags}")
         
-        self.tags_label.config(text=" • ".join(tags[:3]) + ("..." if len(tags) > 3 else ""))
+        self.tags_label.config(text=" • ".join(tags))
         
         results = self.calculator.calculate(tags, sort_mode=self.strat_var.get())
+        
+        print(f"Calculator returned {len(results)} combos")
+        for r in results[:5]:
+            print(f"  {r['tags']} -> {r['min']}*-{r['max']}*")
         
         self.current_results = results
         

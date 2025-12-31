@@ -3,3 +3,11 @@ __pycache__/
 *.pyc
 .idea/
 .vscode/
+debug_roi.png
+debug_view.png
+ocr_debug.log
+.operator_cache.json
+settings.json
+build/
+dist/
+*.spec.bak

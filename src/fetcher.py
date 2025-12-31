@@ -1,43 +1,102 @@
 import requests
 import re
+import json
+import hashlib
+from pathlib import Path
 from .config import GACHA_TABLE_URL, CHAR_TABLE_URL
 
+CACHE_FILE = Path(__file__).parent.parent / ".operator_cache.json"
+CACHE_TTL_HOURS = 24
+
+_RE_HTML_TAGS = re.compile(r"<[^>]*>")
+_RE_RARITY_HEADER = re.compile(r"^[\d★\-\s]*$")
+_RE_SPLIT = re.compile(r"[/\n\r]+")
+
+PROF_MAP = {
+    "warrior": "guard", 
+    "tank": "defender", 
+    "pioneer": "vanguard", 
+    "special": "specialist",
+    "support": "supporter",
+    "medic": "medic",
+    "sniper": "sniper",
+    "caster": "caster",
+}
+
 class GameDataFetcher:
+    __slots__ = ('recruit_pool',)
+    
     def __init__(self):
         self.recruit_pool = []
 
     def fetch_data(self):
+        cached = self._load_cache()
+        if cached:
+            self.recruit_pool = cached
+            print(f"Loaded {len(self.recruit_pool)} operators from cache")
+            # Debug: check supporter count
+            supporter_ops = [op['name'] for op in self.recruit_pool if 'supporter' in op['tags']]
+            print(f"  Supporters in pool: {len(supporter_ops)}")
+            return self.recruit_pool
+        
         try:
             print("Fetching data from GitHub...")
-            gacha_res = requests.get(GACHA_TABLE_URL).json()
-            char_res = requests.get(CHAR_TABLE_URL).json()
+            with requests.Session() as session:
+                gacha_res = session.get(GACHA_TABLE_URL, timeout=10).json()
+                char_res = session.get(CHAR_TABLE_URL, timeout=10).json()
+            
             self._parse_pool(gacha_res, char_res)
             print(f"Data Loaded: {len(self.recruit_pool)} operators found.")
             
-            for rarity in range(1, 7):
-                ops = [op['name'] for op in self.recruit_pool if op['rarity'] == rarity]
-                print(f"  {rarity}★: {len(ops)} operators")
-            
+            self._save_cache()
             return self.recruit_pool
         except Exception as e:
             print(f"Error fetching data: {e}")
-            import traceback
-            traceback.print_exc()
             return []
+    
+    def _load_cache(self):
+        if not CACHE_FILE.exists():
+            return None
+        
+        try:
+            import time
+            cache_age = time.time() - CACHE_FILE.stat().st_mtime
+            if cache_age > CACHE_TTL_HOURS * 3600:
+                return None
+            
+            with open(CACHE_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                for op in data:
+                    op['tags'] = set(op['tags'])
+                return data
+        except Exception:
+            return None
+    
+    def _save_cache(self):
+        try:
+            data = []
+            for op in self.recruit_pool:
+                data.append({
+                    "name": op["name"],
+                    "rarity": op["rarity"],
+                    "tags": list(op["tags"])
+                })
+            with open(CACHE_FILE, 'w', encoding='utf-8') as f:
+                json.dump(data, f)
+        except Exception:
+            pass
 
     def _parse_pool(self, gacha, chars):
         recruit_detail = gacha.get("recruitDetail", "")
         
-        clean_detail = re.sub(r"<[^>]*>", "", recruit_detail)
+        clean_detail = _RE_HTML_TAGS.sub("", recruit_detail)
         clean_detail = clean_detail.replace("\\n", "\n")
         
         valid_names = set()
-        for part in re.split(r"[/\n\r]+", clean_detail):
+        for part in _RE_SPLIT.split(clean_detail):
             name = part.strip()
-            if name and not re.match(r"^[\d★\-\s]*$", name) and len(name) > 1:
+            if name and not _RE_RARITY_HEADER.match(name) and len(name) > 1:
                 valid_names.add(name.lower())
-        
-        print(f"  Found {len(valid_names)} valid operator names in recruit pool")
 
         for char_id, data in chars.items():
             name = data.get("name")
@@ -52,25 +111,12 @@ class GameDataFetcher:
             tags.add(profession)
             tags.add(position)
 
-            prof_map = {
-                "warrior": "guard", 
-                "tank": "defender", 
-                "pioneer": "vanguard", 
-                "special": "specialist",
-                "medic": "medic",
-                "sniper": "sniper",
-                "caster": "caster",
-                "supporter": "supporter"
-            }
-            for k, v in prof_map.items():
-                if k in tags:
-                    tags.discard(k)
-                    tags.add(v)
+            if profession in PROF_MAP:
+                tags.discard(profession)
+                tags.add(PROF_MAP[profession])
             
-            pos_map = {"melee": "melee", "ranged": "ranged"}
-            for k, v in pos_map.items():
-                if k in tags:
-                    tags.add(v)
+            if position in ("melee", "ranged"):
+                tags.add(position)
 
             rarity = data.get("rarity", 0)
             if isinstance(rarity, str) and rarity.startswith("TIER_"):

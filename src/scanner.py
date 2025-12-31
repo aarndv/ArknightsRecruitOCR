@@ -1,153 +1,114 @@
 import cv2
 import numpy as np
-import easyocr
 from PIL import ImageGrab
-from fuzzywuzzy import process
-from datetime import datetime
 from .config import VALID_TAGS
 
+# Build lookup sets for fast exact matching
+_VALID_TAGS_LOWER = {t.lower(): t for t in VALID_TAGS}
+_SHORT_TAGS = {t.lower(): t for t in VALID_TAGS if len(t) <= 4}  # AoE, DPS, Tank, Slow
+
+# Try rapidfuzz first (faster), fall back to fuzzywuzzy
+try:
+    from rapidfuzz import process, fuzz
+    def fuzzy_match(text, choices, score_cutoff=70):
+        text_lower = text.lower()
+        # Exact match first (handles short tags like AoE, DPS)
+        if text_lower in _VALID_TAGS_LOWER:
+            return _VALID_TAGS_LOWER[text_lower], 100
+        # Fuzzy match for longer text
+        result = process.extractOne(text_lower, choices, scorer=fuzz.ratio, score_cutoff=score_cutoff)
+        if result:
+            return result[0], result[1]
+        return None, 0
+except ImportError:
+    from fuzzywuzzy import process as fuzz_process
+    def fuzzy_match(text, choices, score_cutoff=70):
+        text_lower = text.lower()
+        # Exact match first
+        if text_lower in _VALID_TAGS_LOWER:
+            return _VALID_TAGS_LOWER[text_lower], 100
+        # Fuzzy match
+        result = fuzz_process.extractOne(text, choices)
+        if result and result[1] >= score_cutoff:
+            return result[0], result[1]
+        return None, 0
+
 class ScreenScanner:
+    __slots__ = ('reader', 'crop_offset', 'scale', '_gpu_available', '_initialized')
+    
     def __init__(self):
-        self.log_file = "ocr_debug.log"
-        # Initialize EasyOCR reader (English only, GPU if available)
-        self._log("Initializing EasyOCR...")
+        self.reader = None
+        self._initialized = False
+        self._gpu_available = None
+        self.crop_offset = (0, 0)
+        self.scale = 2
+    
+    def _ensure_initialized(self):
+        if self._initialized:
+            return
         
-        # Check if CUDA/GPU is available
-        gpu_available = self._check_gpu()
+        import easyocr
+        print("Initializing EasyOCR...")
         
-        self.reader = easyocr.Reader(['en'], gpu=gpu_available)
-        self._log(f"EasyOCR initialized (GPU={gpu_available}).")
+        self._gpu_available = self._check_gpu()
+        self.reader = easyocr.Reader(['en'], gpu=self._gpu_available, verbose=False)
+        self._initialized = True
+        print(f"EasyOCR ready (GPU={self._gpu_available})")
     
     def _check_gpu(self):
-        """Check GPU availability with detailed diagnostics"""
         try:
             import torch
-            self._log(f"PyTorch version: {torch.__version__}")
-            
-            # Check CUDA compilation
-            cuda_compiled = torch.version.cuda is not None
-            self._log(f"PyTorch compiled with CUDA: {cuda_compiled}")
-            if cuda_compiled:
-                self._log(f"  CUDA version in PyTorch: {torch.version.cuda}")
-            
-            # Check cuDNN
-            if hasattr(torch.backends, 'cudnn'):
-                self._log(f"cuDNN available: {torch.backends.cudnn.is_available()}")
-                if torch.backends.cudnn.is_available():
-                    self._log(f"  cuDNN version: {torch.backends.cudnn.version()}")
-            
-            # Check CUDA availability
-            cuda_available = torch.cuda.is_available()
-            self._log(f"CUDA runtime available: {cuda_available}")
-            
-            if cuda_available:
-                device_count = torch.cuda.device_count()
-                self._log(f"GPU count: {device_count}")
-                for i in range(device_count):
-                    self._log(f"  GPU {i}: {torch.cuda.get_device_name(i)}")
-                    props = torch.cuda.get_device_properties(i)
-                    self._log(f"    Memory: {props.total_memory / 1024**3:.1f} GB")
-                    self._log(f"    Compute capability: {props.major}.{props.minor}")
-                return True
-            else:
-                self._log("")
-                self._log("⚠ CUDA not available. Diagnostic info:")
-                if not cuda_compiled:
-                    self._log("  → PyTorch was installed WITHOUT CUDA support")
-                    self._log("  → Fix: pip uninstall torch && pip install torch --index-url https://download.pytorch.org/whl/cu118")
-                else:
-                    self._log("  → PyTorch has CUDA but runtime check failed")
-                    self._log("  → Possible causes:")
-                    self._log("    - NVIDIA driver not installed or outdated")
-                    self._log("    - No NVIDIA GPU in this system")
-                    self._log("    - CUDA toolkit version mismatch")
-                self._log("")
-                return False
-                
-        except ImportError as e:
-            self._log(f"PyTorch not found: {e}")
-            self._log("EasyOCR will use CPU mode.")
+            return torch.cuda.is_available()
+        except ImportError:
             return False
-        except Exception as e:
-            self._log(f"Error checking GPU: {e}")
-            import traceback
-            self._log(traceback.format_exc())
+        except Exception:
             return False
-    
-    def _log(self, message, also_print=True):
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log_entry = f"[{timestamp}] {message}"
-        with open(self.log_file, "a", encoding="utf-8") as f:
-            f.write(log_entry + "\n")
-        if also_print:
-            print(message)
     
     def capture_screen(self):
         screen = ImageGrab.grab()
         return cv2.cvtColor(np.array(screen), cv2.COLOR_RGB2BGR)
 
     def scan_for_tags(self, img):
-        self._log("\n" + "="*50)
-        self._log("NEW SCAN STARTED")
-        self._log("="*50)
+        self._ensure_initialized()
         
         h, w, _ = img.shape
-        self._log(f"Screen size: {w}x{h}")
         
-        y1, y2 = int(h * 0.50), int(h * 0.72)
-        x1, x2 = int(w * 0.30), int(w * 0.68)
+        # Wide crop to capture all 5 tags (2 rows x 3 columns)
+        y1, y2 = int(h * 0.45), int(h * 0.78)
+        x1, x2 = int(w * 0.15), int(w * 0.85)
         roi = img[y1:y2, x1:x2]
-        self._log(f"ROI crop: x={x1}-{x2}, y={y1}-{y2}")
 
         self.crop_offset = (x1, y1)
-        self.scale = 2
 
-        roi_resized = cv2.resize(roi, (0, 0), fx=self.scale, fy=self.scale, interpolation=cv2.INTER_LINEAR)
-        self._log(f"Scaled ROI size: {roi_resized.shape[1]}x{roi_resized.shape[0]} (scale={self.scale}x)")
-
+        roi_resized = cv2.resize(roi, None, fx=self.scale, fy=self.scale, interpolation=cv2.INTER_LINEAR)
+        
+        # Save debug image
         cv2.imwrite("debug_roi.png", roi_resized)
 
-        self._log("Running EasyOCR...")
         results = self.reader.readtext(roi_resized)
         
-        self._log(f"\n--- EASYOCR RAW OUTPUT ({len(results)} detections) ---")
         found_tags = {}
         
-        for (bbox, text, confidence) in results:
-            text = text.strip()
-            self._log(f"  Detected: '{text}' (confidence: {confidence:.2f})")
+        print(f"OCR detected {len(results)} text regions:")
+        for bbox, text, confidence in results:
+            text_clean = text.strip()
+            print(f"  '{text_clean}' (conf: {confidence:.2f})")
             
-            if confidence < 0.3:
-                self._log(f"    ✗ Skipped (confidence < 0.3)")
+            if confidence < 0.25 or len(text_clean) < 2:
+                print(f"    -> Skipped (low conf or too short)")
                 continue
-            if len(text) < 2:
-                self._log(f"    ✗ Skipped (too short)")
-                continue
-                
-            match, score = process.extractOne(text, VALID_TAGS)
-            self._log(f"    -> Best match: '{match}' (score: {score})")
             
-            if score >= 75:
+            match, score = fuzzy_match(text_clean, VALID_TAGS, score_cutoff=70)
+            
+            if match:
                 screen_bbox = self._bbox_to_screen(bbox)
                 found_tags[match] = screen_bbox
-                self._log(f"    ✓ ACCEPTED (screen pos: {screen_bbox})")
+                print(f"    -> Matched: '{match}' (score: {score})")
             else:
-                self._log(f"    ✗ Rejected (score < 75)")
-
-        debug_img = roi_resized.copy()
-        for (bbox, text, confidence) in results:
-            if confidence >= 0.3:
-                pts = np.array(bbox, dtype=np.int32)
-                cv2.polylines(debug_img, [pts], True, (0, 255, 0), 2)
-                cv2.putText(debug_img, text, (pts[0][0], pts[0][1] - 10), 
-                           cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+                print(f"    -> No match")
         
-        cv2.imwrite("debug_view.png", debug_img)
-        self._log(f"\n--- RESULT ---")
-        self._log(f"Found tags: {list(found_tags.keys())}")
-        self._log("="*50 + "\n")
-
-        return found_tags, debug_img
+        print(f"Final tags: {list(found_tags.keys())}")
+        return found_tags, None
     
     def _bbox_to_screen(self, bbox):
         x_offset, y_offset = self.crop_offset

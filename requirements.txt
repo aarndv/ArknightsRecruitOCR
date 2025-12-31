@@ -6,5 +6,4 @@ Pillow
 keyboard
 pynput
 pyautogui
-fuzzywuzzy
-python-Levenshtein
+rapidfuzz
