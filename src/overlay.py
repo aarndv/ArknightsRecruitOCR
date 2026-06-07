@@ -7,6 +7,8 @@ from .scanner import ScreenScanner
 from .calculator import RecruitCalculator
 from .settings import SettingsManager, HOTKEY_OPTIONS
 
+PLACEHOLDER_CELL = "-"
+
 class OverlayApp:
     def __init__(self, fetcher):
         self.fetcher = fetcher
@@ -31,6 +33,7 @@ class OverlayApp:
         self.root.title("Arknights Recruit Helper")
         self.root.attributes("-topmost", True)
         self.root.geometry("380x520+50+50")
+        self.root.resizable(False, False)
         self.root.attributes("-alpha", 0.95)
         self.root.configure(bg="#1a1a2e")
         
@@ -59,13 +62,13 @@ class OverlayApp:
     def setup_hotkeys(self):
         try:
             keyboard.unhook_all()
-        except:
+        except Exception:
             pass
         
         if self.mouse_listener:
             try:
                 self.mouse_listener.stop()
-            except:
+            except Exception:
                 pass
             self.mouse_listener = None
         
@@ -287,7 +290,7 @@ class OverlayApp:
         print("Quick scan...")
         try:
             img = self.scanner.capture_screen()
-            tag_data, debug_boxes = self.scanner.scan_for_tags(img)
+            tag_data, _ = self.scanner.scan_for_tags(img)
             self.tag_positions = tag_data
             tags = list(tag_data.keys())
         except Exception as e:
@@ -524,7 +527,7 @@ class OverlayApp:
         print("Snapshot taken...")
         try:
             img = self.scanner.capture_screen()
-            tag_data, debug_boxes = self.scanner.scan_for_tags(img)
+            tag_data, _ = self.scanner.scan_for_tags(img)
             self.tag_positions = tag_data
             tags = list(tag_data.keys())
         except Exception as e:
@@ -608,10 +611,10 @@ class OverlayApp:
             return
         
         item = self.tree.item(selection[0])
-        tag_str = item['values'][0]
-        
-        if tag_str in ["No Tags Found", "No Valid Combos"]:
+        values = item.get('values', [])
+        if len(values) < 3 or values[1] == PLACEHOLDER_CELL or values[2] == PLACEHOLDER_CELL:
             return
+        tag_str = values[0]
         
         combo_tags = [t.strip() for t in tag_str.split(",")]
         
@@ -705,7 +708,7 @@ class OverlayApp:
         for hw in self.highlight_windows:
             try:
                 hw.destroy()
-            except:
+            except Exception:
                 pass
         self.highlight_windows = []
     
@@ -734,7 +737,7 @@ class SettingsDialog:
         self.dialog = tk.Toplevel(parent)
         self.dialog.title("Settings")
         self.dialog.geometry("380x380")
-        self.dialog.configure(bg=bg_dark)
+        self.dialog.configure(bg=self.bg_dark)
         self.dialog.attributes("-topmost", True)
         self.dialog.resizable(False, False)
         self.dialog.transient(parent)
@@ -863,21 +866,20 @@ class SettingsDialog:
                         return
                     capture_win.destroy()
                     return False
-                except:
+                except Exception:
                     pass
-        
-        keyboard.on_press(on_key)
+        keyboard_hook = keyboard.on_press(on_key)
         
         try:
             from pynput import mouse
             mouse_listener = mouse.Listener(on_click=on_mouse)
             mouse_listener.start()
-        except:
+        except Exception:
             mouse_listener = None
         
         capture_win.wait_window()
         
-        keyboard.unhook_all()
+        keyboard.unhook(keyboard_hook)
         if mouse_listener:
             mouse_listener.stop()
         
