@@ -8,6 +8,7 @@ from .config import GACHA_TABLE_URL, CHAR_TABLE_URL
 CACHE_FILE = Path(__file__).parent.parent / ".operator_cache.json"
 CACHE_TTL_HOURS = 24
 CACHE_MAX_BYTES = 2 * 1024 * 1024
+REMOTE_MAX_BYTES = CACHE_MAX_BYTES * 10
 
 _RE_HTML_TAGS = re.compile(r"<[^>]*>")
 _RE_RARITY_HEADER = re.compile(r"^[\d★\-\s]*$")
@@ -58,12 +59,14 @@ class GameDataFetcher:
     def _fetch_json(self, session, url):
         response = session.get(url, timeout=10)
         response.raise_for_status()
-        content_len = int(response.headers.get("Content-Length", "0") or "0")
-        if content_len > CACHE_MAX_BYTES * 10:
+        content_len = int(response.headers.get("Content-Length", "0"))
+        if content_len > REMOTE_MAX_BYTES:
+            raise ValueError("Remote payload too large")
+        if len(response.content) > REMOTE_MAX_BYTES:
             raise ValueError("Remote payload too large")
         payload = response.json()
         if not isinstance(payload, dict):
-            raise ValueError("Unexpected JSON payload")
+            raise ValueError(f"Expected dict payload, got {type(payload).__name__}")
         return payload
     
     def _load_cache(self):
@@ -96,10 +99,14 @@ class GameDataFetcher:
                     "tags": list(op["tags"])
                 })
             tmp_cache = CACHE_FILE.with_suffix(".tmp")
-            with open(tmp_cache, 'w', encoding='utf-8') as f:
+            flags = os.O_WRONLY | os.O_CREAT | os.O_TRUNC
+            fd = os.open(tmp_cache, flags, 0o600)
+            with os.fdopen(fd, 'w', encoding='utf-8') as f:
+                # Keep cache compact to limit disk and memory footprint.
                 json.dump(data, f, separators=(",", ":"))
             try:
-                os.chmod(tmp_cache, 0o600)
+                if os.name != "nt":
+                    os.chmod(tmp_cache, 0o600)
             except Exception:
                 pass
             os.replace(tmp_cache, CACHE_FILE)

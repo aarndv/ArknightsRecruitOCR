@@ -7,6 +7,8 @@ from .scanner import ScreenScanner
 from .calculator import RecruitCalculator
 from .settings import SettingsManager, HOTKEY_OPTIONS
 
+PLACEHOLDER_CELL = "-"
+
 class OverlayApp:
     def __init__(self, fetcher):
         self.fetcher = fetcher
@@ -609,10 +611,10 @@ class OverlayApp:
             return
         
         item = self.tree.item(selection[0])
-        tag_str = item['values'][0]
-        
-        if tag_str.startswith("No "):
+        values = item.get('values', [])
+        if len(values) < 3 or values[1] == PLACEHOLDER_CELL or values[2] == PLACEHOLDER_CELL:
             return
+        tag_str = values[0]
         
         combo_tags = [t.strip() for t in tag_str.split(",")]
         
