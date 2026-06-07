@@ -1,7 +1,7 @@
 from itertools import combinations
 
 class RecruitCalculator:
-    __slots__ = ('pool', '_tag_index', '_has_top_op', '_has_robot', '_has_starter')
+    __slots__ = ('pool', '_tag_index')
     
     def __init__(self, pool):
         self.pool = pool
@@ -9,22 +9,12 @@ class RecruitCalculator:
     
     def _build_tag_index(self):
         self._tag_index = {}
-        self._has_top_op = set()
-        self._has_robot = set()
-        self._has_starter = set()
         
         for i, op in enumerate(self.pool):
             for tag in op['tags']:
                 if tag not in self._tag_index:
-                    self._tag_index[tag] = []
-                self._tag_index[tag].append(i)
-            
-            if "top operator" in op['tags']:
-                self._has_top_op.add(i)
-            if "robot" in op['tags']:
-                self._has_robot.add(i)
-            if "starter" in op['tags']:
-                self._has_starter.add(i)
+                    self._tag_index[tag] = set()
+                self._tag_index[tag].add(i)
 
     def calculate(self, selected_tags, sort_mode="min"):
         selected_tags = [t.lower() for t in selected_tags]
@@ -41,12 +31,12 @@ class RecruitCalculator:
                 if first_tag not in self._tag_index:
                     continue
                 
-                candidate_indices = set(self._tag_index[first_tag])
+                candidate_indices = self._tag_index[first_tag].copy()
                 for tag in combo[1:]:
                     if tag not in self._tag_index:
                         candidate_indices = set()
                         break
-                    candidate_indices &= set(self._tag_index[tag])
+                    candidate_indices.intersection_update(self._tag_index[tag])
                 
                 if not candidate_indices:
                     continue

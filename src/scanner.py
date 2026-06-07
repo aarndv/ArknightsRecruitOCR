@@ -5,7 +5,6 @@ from .config import VALID_TAGS
 
 # Build lookup sets for fast exact matching
 _VALID_TAGS_LOWER = {t.lower(): t for t in VALID_TAGS}
-_SHORT_TAGS = {t.lower(): t for t in VALID_TAGS if len(t) <= 4}  # AoE, DPS, Tank, Slow
 
 # Try rapidfuzz first (faster), fall back to fuzzywuzzy
 try:
@@ -82,9 +81,6 @@ class ScreenScanner:
 
         roi_resized = cv2.resize(roi, None, fx=self.scale, fy=self.scale, interpolation=cv2.INTER_LINEAR)
         
-        # Save debug image
-        cv2.imwrite("debug_roi.png", roi_resized)
-
         results = self.reader.readtext(roi_resized)
         
         found_tags = {}

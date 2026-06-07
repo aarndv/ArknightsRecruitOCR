@@ -1,12 +1,13 @@
 import requests
 import re
 import json
-import hashlib
+import os
 from pathlib import Path
 from .config import GACHA_TABLE_URL, CHAR_TABLE_URL
 
 CACHE_FILE = Path(__file__).parent.parent / ".operator_cache.json"
 CACHE_TTL_HOURS = 24
+CACHE_MAX_BYTES = 2 * 1024 * 1024
 
 _RE_HTML_TAGS = re.compile(r"<[^>]*>")
 _RE_RARITY_HEADER = re.compile(r"^[\d★\-\s]*$")
@@ -42,8 +43,8 @@ class GameDataFetcher:
         try:
             print("Fetching data from GitHub...")
             with requests.Session() as session:
-                gacha_res = session.get(GACHA_TABLE_URL, timeout=10).json()
-                char_res = session.get(CHAR_TABLE_URL, timeout=10).json()
+                gacha_res = self._fetch_json(session, GACHA_TABLE_URL)
+                char_res = self._fetch_json(session, CHAR_TABLE_URL)
             
             self._parse_pool(gacha_res, char_res)
             print(f"Data Loaded: {len(self.recruit_pool)} operators found.")
@@ -53,6 +54,17 @@ class GameDataFetcher:
         except Exception as e:
             print(f"Error fetching data: {e}")
             return []
+
+    def _fetch_json(self, session, url):
+        response = session.get(url, timeout=10)
+        response.raise_for_status()
+        content_len = int(response.headers.get("Content-Length", "0") or "0")
+        if content_len > CACHE_MAX_BYTES * 10:
+            raise ValueError("Remote payload too large")
+        payload = response.json()
+        if not isinstance(payload, dict):
+            raise ValueError("Unexpected JSON payload")
+        return payload
     
     def _load_cache(self):
         if not CACHE_FILE.exists():
@@ -60,6 +72,8 @@ class GameDataFetcher:
         
         try:
             import time
+            if CACHE_FILE.stat().st_size > CACHE_MAX_BYTES:
+                return None
             cache_age = time.time() - CACHE_FILE.stat().st_mtime
             if cache_age > CACHE_TTL_HOURS * 3600:
                 return None
@@ -81,8 +95,14 @@ class GameDataFetcher:
                     "rarity": op["rarity"],
                     "tags": list(op["tags"])
                 })
-            with open(CACHE_FILE, 'w', encoding='utf-8') as f:
-                json.dump(data, f)
+            tmp_cache = CACHE_FILE.with_suffix(".tmp")
+            with open(tmp_cache, 'w', encoding='utf-8') as f:
+                json.dump(data, f, separators=(",", ":"))
+            try:
+                os.chmod(tmp_cache, 0o600)
+            except Exception:
+                pass
+            os.replace(tmp_cache, CACHE_FILE)
         except Exception:
             pass
 
